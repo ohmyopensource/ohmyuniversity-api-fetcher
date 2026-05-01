@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_fetcher
+    username: postgres
+    password: postgres
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 2
+
+  jpa:
+    show-sql: true
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+fetcher:
+  schedule:
+    courses: "0 0 3 1 8 *"        # August 1st at 3:00
+    bandi: "0 0 4 * * *"          # every day at 4:00
+    dottorati: "0 0 5 * * *"      # every day at 5:00
+    inpa: "0 0 6 * * *"           # every day at 6:00
+    epso: "0 0 2 * * 0"           # every Sunday at 2:00
+    ordini: "0 0 1 1 * *"         # first day of the month at 1:00
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus,metrics,info,scheduledtasks
+
+logging:
+  level:
+    org.ohmyopensource: DEBUG
+    org.springframework.batch: DEBUG
+    org.springframework.web: DEBUG
+    org.flywaydb: DEBUG

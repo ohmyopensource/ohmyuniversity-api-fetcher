@@ -1,0 +1,19 @@
+spring:
+
+  batch:
+    job:
+      enabled: false
+
+  task:
+    scheduling:
+      pool:
+        size: 0
+
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    org.ohmyopensource: DEBUG
+    org.springframework.batch: DEBUG
+    org.testcontainers: INFO

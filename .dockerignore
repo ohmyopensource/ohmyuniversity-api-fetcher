@@ -1,0 +1,46 @@
+# ================================
+# OhMyUniversity! - Fetcher - .gitgnore
+# ================================
+
+# Build output
+target/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.classpath
+*.project
+*.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven wrapper local cache
+.mvn/wrapper/maven-wrapper.jar
+
+# Local configuration files
+application-dev.yml
+application-local.yml
+*.env
+.env
+
+# Docke
+Dockerfile
+.dockerignore
+
+# Docs and Project files
+README.md
+CHANGELOG.md
+LICENSE
+docs/
+
+# Logs
+*.log
+logs/
