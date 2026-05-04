@@ -1,17 +1,15 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/db_fetcher
-    username: postgres
-    password: postgres
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
     hikari:
       maximum-pool-size: 5
       minimum-idle: 2
-
   jpa:
     show-sql: true
-
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
 
 fetcher:
   schedule:
@@ -21,6 +19,9 @@ fetcher:
     inpa: "0 0 6 * * *"           # every day at 6:00
     epso: "0 0 2 * * 0"           # every Sunday at 2:00
     ordini: "0 0 1 1 * *"         # first day of the month at 1:00
+  api:
+    inpa-key: ${INPA_API_KEY}
+    epso-key: ${EPSO_API_KEY}
 
 management:
   endpoints:

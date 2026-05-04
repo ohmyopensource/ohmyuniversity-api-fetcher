@@ -38,7 +38,7 @@
 	</properties>
 
 
-	<!--
+<!--
 	================================
   DEPENDENCY MANAGEMENT
   ================================
@@ -46,7 +46,7 @@
 	<dependencyManagement>
 		<dependencies>
 
-			<!-- 	Testcontainers BOM -->
+			<!-- Testcontainers BOM -->
 			<dependency>
 				<groupId>org.testcontainers</groupId>
 				<artifactId>testcontainers-bom</artifactId>
@@ -59,7 +59,6 @@
 	</dependencyManagement>
 
 	<dependencies>
-
 
 		<!-- 	Web (just /actuator) -->
 		<dependency>
@@ -79,35 +78,35 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
-		<!-- DTO Validation -->
+		<!-- Validation -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 
-		<!-- 	Reactive HTTP Client-->
+		<!-- Reactive HTTP Client-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 
-		<!-- 	Kafka Producer -->
+		<!-- Kafka -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-kafka</artifactId>
 		</dependency>
 
-		<!-- 	Flyway -->
+		<!-- Flyway -->
 		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-core</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-flyway</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-database-postgresql</artifactId>
 		</dependency>
 
-		<!-- 	Postgresql Driver -->
+		<!-- Postgresql -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -144,11 +143,11 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!--
-        ================================
-        TEST
-        ================================
-    -->
+<!--
+    ================================
+    TEST
+    ================================
+-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -3,29 +3,29 @@ spring:
     default: dev
   application:
     name: ohmyuniversity-fetcher
-
+  config:
+    import: optional:file:.env[.properties]
   batch:
     job:
       enabled: false
-
   jpa:
     hibernate:
       ddl-auto: validate
     show-sql: false
     open-in-view: false
-
   flyway:
     enabled: true
     locations: classpath:db/migration
-
   kafka:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         spring.json.add.type.headers: false
-
   task:
     scheduling:
       pool:
         size: 5
+
+server:
+  port: 8080
