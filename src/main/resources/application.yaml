@@ -17,6 +17,7 @@ spring:
   flyway:
     enabled: true
     locations: classpath:db/migration
+    validate-on-migrate: true
 
   kafka:
     producer:
