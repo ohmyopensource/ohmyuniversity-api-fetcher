@@ -1,14 +1,11 @@
 spring:
-
   batch:
     job:
       enabled: false
-
   task:
     scheduling:
       pool:
         size: 0
-
   jpa:
     show-sql: true
 
