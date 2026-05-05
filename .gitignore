@@ -104,4 +104,4 @@ hs_err_pid*
 .env
 .env.*
 *.env
-!env.example
+!.env.example
