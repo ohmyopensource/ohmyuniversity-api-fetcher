@@ -21,7 +21,7 @@ fetcher:
     dottorati: "0 0 5 * * *"      # every day at 5:00
     inpa: "0 0 6 * * *"           # every day at 6:00
     epso: "0 0 2 * * 0"           # every Sunday at 2:00
-    ordini: "0 0 1 1 * *"         # first day of the month at 1:00
+    ordini: "0 0 1 1 2,8 *"       # first day of the month at 1:00
   api:
     inpa-key: ${INPA_API_KEY}
     epso-key: ${EPSO_API_KEY}

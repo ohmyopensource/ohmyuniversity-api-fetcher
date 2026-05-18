@@ -2,8 +2,8 @@ package org.ohmyopensource.ohmyuniversity.fetcher.config;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import java.util.Properties;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.EnvironmentPostProcessor;
+import org.springframework.boot.SpringApplication;
 import org.springframework.core.Ordered;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.PropertiesPropertySource;
@@ -13,9 +13,24 @@ import org.springframework.core.env.PropertiesPropertySource;
  * Runs before the application context is initialized so that ${VAR} placeholders
  * in application.yml are resolved correctly.
  */
-public class DotenvLoader implements EnvironmentPostProcessor {
+public class DotenvLoader implements EnvironmentPostProcessor, Ordered {
 
   private static final String DOTENV_PROPERTY_SOURCE_NAME = "dotenvProperties";
+
+  private static final String[] ENV_KEYS = {
+      "SPRING_PROFILES_ACTIVE",
+      "POSTGRES_URL",
+      "POSTGRES_USERNAME",
+      "POSTGRES_PASSWORD",
+      "KAFKA_BOOTSTRAP_SERVERS",
+      "INPA_API_KEY",
+      "EPSO_API_KEY"
+  };
+
+  @Override
+  public int getOrder() {
+    return Ordered.HIGHEST_PRECEDENCE + 10;
+  }
 
   @Override
   public void postProcessEnvironment(
@@ -31,13 +46,7 @@ public class DotenvLoader implements EnvironmentPostProcessor {
 
       Properties props = new Properties();
 
-      String[] keys = {
-          "POSTGRES_URL", "POSTGRES_USERNAME", "POSTGRES_PASSWORD",
-          "KAFKA_BOOTSTRAP_SERVERS", "INPA_API_KEY", "EPSO_API_KEY",
-          "SPRING_PROFILES_ACTIVE"
-      };
-
-      for (String key : keys) {
+      for (String key : ENV_KEYS) {
         try {
           String value = dotenv.get(key);
           props.put(key, value);
@@ -51,7 +60,7 @@ public class DotenvLoader implements EnvironmentPostProcessor {
       }
 
     } catch (Exception e) {
-      System.out.println("=== DOTENV ERROR: " + e.getMessage());
+      // Silently ignore - .env is optional in containerized environments
     }
   }
 }

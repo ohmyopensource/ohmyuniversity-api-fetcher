@@ -5,12 +5,23 @@ spring:
   task:
     scheduling:
       pool:
-        size: 0
+        size: 1
   jpa:
+    hibernate:
+      ddl-auto: validate
     show-sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+# Cron expressions set to never fire in tests (Feb 31 does not exist)
+fetcher:
+  schedule:
+    ordini: "0 0 0 31 2 *"
 
 logging:
   level:
     org.ohmyopensource: DEBUG
     org.springframework.batch: DEBUG
     org.testcontainers: INFO
+    org.flywaydb: DEBUG

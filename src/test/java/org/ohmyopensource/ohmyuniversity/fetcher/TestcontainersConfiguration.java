@@ -7,14 +7,13 @@ import org.testcontainers.kafka.KafkaContainer;
 import org.testcontainers.postgresql.PostgreSQLContainer;
 import org.testcontainers.utility.DockerImageName;
 
+/**
+ * Testcontainers configuration for the fetcher microservice.
+ * Starts PostgreSQL and Kafka containers for integration tests.
+ * All containers use fixed versions for reproducible builds.
+ */
 @TestConfiguration(proxyBeanMethods = false)
 public class TestcontainersConfiguration {
-
-	@Bean
-	@ServiceConnection
-	KafkaContainer kafkaContainer() {
-		return new KafkaContainer(DockerImageName.parse("apache/kafka-native:4.0.0"));
-	}
 
 	@Bean
 	@ServiceConnection
@@ -22,4 +21,9 @@ public class TestcontainersConfiguration {
 		return new PostgreSQLContainer(DockerImageName.parse("postgres:16-alpine"));
 	}
 
+	@Bean
+	@ServiceConnection
+	KafkaContainer kafkaContainer() {
+		return new KafkaContainer(DockerImageName.parse("apache/kafka-native:4.0.0"));
+	}
 }

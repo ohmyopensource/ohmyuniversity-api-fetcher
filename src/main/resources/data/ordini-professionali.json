@@ -1,0 +1,200 @@
+[
+  {
+    "codice": "AVVOCATI",
+    "nome": "Ordine degli Avvocati",
+    "categoria": "LEGALE",
+    "organismoNazionale": "Consiglio Nazionale Forense (CNF)",
+    "sitioUfficiale": "https://www.consiglionazionaleforense.it",
+    "requisitiLaurea": ["LMG/01"],
+    "requisitiNote": "Laurea magistrale a ciclo unico in Giurisprudenza. Praticantato e esame di Stato.",
+    "ministeroVigilanza": "Ministero della Giustizia",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "NOTAI",
+    "nome": "Ordine dei Notai",
+    "categoria": "LEGALE",
+    "organismoNazionale": "Consiglio Nazionale del Notariato",
+    "sitioUfficiale": "https://www.notariato.it",
+    "requisitiLaurea": ["LMG/01"],
+    "requisitiNote": "Laurea magistrale a ciclo unico in Giurisprudenza. Concorso pubblico nazionale.",
+    "ministeroVigilanza": "Ministero della Giustizia",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "MEDICI_CHIRURGHI",
+    "nome": "Ordine dei Medici Chirurghi e degli Odontoiatri",
+    "categoria": "SANITARIO",
+    "organismoNazionale": "Federazione Nazionale degli Ordini dei Medici Chirurghi e degli Odontoiatri (FNOMCeO)",
+    "sitioUfficiale": "https://www.fnomceo.it",
+    "requisitiLaurea": ["LM-41", "LM-46"],
+    "requisitiNote": "LM-41 per medici chirurghi, LM-46 per odontoiatri. Esame di Stato abilitante.",
+    "ministeroVigilanza": "Ministero della Salute",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "FARMACISTI",
+    "nome": "Ordine dei Farmacisti",
+    "categoria": "SANITARIO",
+    "organismoNazionale": "Federazione degli Ordini dei Farmacisti Italiani (FOFI)",
+    "sitioUfficiale": "https://www.fofi.it",
+    "requisitiLaurea": ["LM-13"],
+    "requisitiNote": "Laurea magistrale a ciclo unico in Farmacia o Farmacia Industriale. Tirocinio ed esame di Stato.",
+    "ministeroVigilanza": "Ministero della Salute",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "INFERMIERI",
+    "nome": "Ordine delle Professioni Infermieristiche",
+    "categoria": "SANITARIO",
+    "organismoNazionale": "Federazione Nazionale Ordini Professioni Infermieristiche (FNOPI)",
+    "sitioUfficiale": "https://www.fnopi.it",
+    "requisitiLaurea": ["L/SNT1"],
+    "requisitiNote": "Laurea in Infermieristica (classe L/SNT1). Abilitazione integrata nel percorso di studi.",
+    "ministeroVigilanza": "Ministero della Salute",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "PSICOLOGI",
+    "nome": "Ordine degli Psicologi",
+    "categoria": "SANITARIO",
+    "organismoNazionale": "Consiglio Nazionale dell'Ordine degli Psicologi (CNOP)",
+    "sitioUfficiale": "https://www.psy.it",
+    "requisitiLaurea": ["LM-51"],
+    "requisitiNote": "Laurea magistrale in Psicologia (LM-51). Tirocinio post-laurea ed esame di Stato.",
+    "ministeroVigilanza": "Ministero della Salute",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "INGEGNERI",
+    "nome": "Ordine degli Ingegneri",
+    "categoria": "TECNICO_SCIENTIFICO",
+    "organismoNazionale": "Consiglio Nazionale degli Ingegneri (CNI)",
+    "sitioUfficiale": "https://www.tuttoingegnere.it",
+    "requisitiLaurea": ["LM-20", "LM-21", "LM-22", "LM-23", "LM-24", "LM-25", "LM-26", "LM-27", "LM-28", "LM-29", "LM-30", "LM-31", "LM-32", "LM-33"],
+    "requisitiNote": "Laurea magistrale in ingegneria (varie classi). Sezione A per magistrali, Sezione B per triennali. Esame di Stato.",
+    "ministeroVigilanza": "Ministero della Giustizia",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "ARCHITETTI",
+    "nome": "Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori",
+    "categoria": "TECNICO_SCIENTIFICO",
+    "organismoNazionale": "Consiglio Nazionale degli Architetti, Pianificatori, Paesaggisti e Conservatori (CNAPPC)",
+    "sitioUfficiale": "https://www.architetti.com",
+    "requisitiLaurea": ["LM-4", "LM-4 c.u."],
+    "requisitiNote": "Laurea magistrale a ciclo unico in Architettura (LM-4 c.u.) per Sezione A. Laurea triennale per Sezione B. Esame di Stato.",
+    "ministeroVigilanza": "Ministero della Giustizia",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "COMMERCIALISTI",
+    "nome": "Ordine dei Dottori Commercialisti e degli Esperti Contabili",
+    "categoria": "ECONOMICO",
+    "organismoNazionale": "Consiglio Nazionale dei Dottori Commercialisti e degli Esperti Contabili (CNDCEC)",
+    "sitioUfficiale": "https://www.commercialisti.it",
+    "requisitiLaurea": ["LM-77", "LM-56"],
+    "requisitiNote": "Laurea magistrale in Scienze Economico-Aziendali (LM-77) o Scienze dell'Economia (LM-56). Tirocinio ed esame di Stato.",
+    "ministeroVigilanza": "Ministero della Giustizia",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "CONSULENTI_LAVORO",
+    "nome": "Ordine dei Consulenti del Lavoro",
+    "categoria": "ECONOMICO",
+    "organismoNazionale": "Consiglio Nazionale dell'Ordine dei Consulenti del Lavoro",
+    "sitioUfficiale": "https://www.consulentidellavoro.it",
+    "requisitiLaurea": ["LM-77", "LM-56", "LM-63"],
+    "requisitiNote": "Laurea magistrale in ambito economico-giuridico. Praticantato 18 mesi ed esame di Stato.",
+    "ministeroVigilanza": "Ministero del Lavoro",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "GEOLOGI",
+    "nome": "Ordine dei Geologi",
+    "categoria": "TECNICO_SCIENTIFICO",
+    "organismoNazionale": "Consiglio Nazionale dei Geologi",
+    "sitioUfficiale": "https://www.geologiditalia.it",
+    "requisitiLaurea": ["LM-74"],
+    "requisitiNote": "Laurea magistrale in Scienze e Tecnologie Geologiche (LM-74). Esame di Stato.",
+    "ministeroVigilanza": "Ministero della Giustizia",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "BIOLOGI",
+    "nome": "Ordine Nazionale dei Biologi",
+    "categoria": "TECNICO_SCIENTIFICO",
+    "organismoNazionale": "Ordine Nazionale dei Biologi (ONB)",
+    "sitioUfficiale": "https://www.onb.it",
+    "requisitiLaurea": ["LM-6", "LM-7", "LM-8", "LM-9"],
+    "requisitiNote": "Laurea magistrale in Biologia e classi affini. Sezione A per magistrali, Sezione B per triennali. Esame di Stato.",
+    "ministeroVigilanza": "Ministero della Salute",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "CHIMICI_FISICI",
+    "nome": "Ordine dei Chimici e dei Fisici",
+    "categoria": "TECNICO_SCIENTIFICO",
+    "organismoNazionale": "Consiglio Nazionale dei Chimici e dei Fisici",
+    "sitioUfficiale": "https://www.chimici.it",
+    "requisitiLaurea": ["LM-54", "LM-17"],
+    "requisitiNote": "LM-54 per Chimici, LM-17 per Fisici. Sezione A per magistrali, Sezione B per triennali. Esame di Stato.",
+    "ministeroVigilanza": "Ministero della Giustizia",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "VETERINARI",
+    "nome": "Ordine dei Medici Veterinari",
+    "categoria": "SANITARIO",
+    "organismoNazionale": "Federazione Nazionale degli Ordini Veterinari Italiani (FNOVI)",
+    "sitioUfficiale": "https://www.fnovi.it",
+    "requisitiLaurea": ["LM-42"],
+    "requisitiNote": "Laurea magistrale a ciclo unico in Medicina Veterinaria (LM-42). Esame di Stato.",
+    "ministeroVigilanza": "Ministero della Salute",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "ASSISTENTI_SOCIALI",
+    "nome": "Ordine degli Assistenti Sociali",
+    "categoria": "SOCIALE",
+    "organismoNazionale": "Consiglio Nazionale dell'Ordine degli Assistenti Sociali (CNOAS)",
+    "sitioUfficiale": "https://www.cnoas.it",
+    "requisitiLaurea": ["LM-87"],
+    "requisitiNote": "Laurea magistrale in Servizio Sociale e Politiche Sociali (LM-87). Sezione A per magistrali, Sezione B per triennali. Esame di Stato.",
+    "ministeroVigilanza": "Ministero del Lavoro",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "ATTUARI",
+    "nome": "Ordine degli Attuari",
+    "categoria": "ECONOMICO",
+    "organismoNazionale": "Ordine Nazionale degli Attuari",
+    "sitioUfficiale": "https://www.ordineattuari.it",
+    "requisitiLaurea": ["LM-83", "LM-82"],
+    "requisitiNote": "Laurea magistrale in Scienze Statistiche (LM-82) o Scienze Attuariali e Finanziarie (LM-83). Esame di Stato.",
+    "ministeroVigilanza": "Ministero della Giustizia",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "GIORNALISTI",
+    "nome": "Ordine dei Giornalisti",
+    "categoria": "COMUNICAZIONE",
+    "organismoNazionale": "Ordine dei Giornalisti (ODG)",
+    "sitioUfficiale": "https://www.odg.it",
+    "requisitiLaurea": [],
+    "requisitiNote": "Non richiede una laurea specifica. Praticantato riconosciuto o scuola di giornalismo accreditata. Esame di idoneità professionale.",
+    "ministeroVigilanza": "Presidenza del Consiglio dei Ministri",
+    "aggiornatoAl": "2025-01-01"
+  },
+  {
+    "codice": "PEDAGOGISTI",
+    "nome": "Ordine dei Pedagogisti e degli Educatori Socio-Pedagogici",
+    "categoria": "SOCIALE",
+    "organismoNazionale": "Consiglio Nazionale dell'Ordine dei Pedagogisti e degli Educatori Socio-Pedagogici",
+    "sitioUfficiale": "https://www.cnopedagogistaieducatori.it",
+    "requisitiLaurea": ["LM-50", "LM-57", "LM-85", "LM-93"],
+    "requisitiNote": "Ordine istituito nel 2023 (L. 55/2023). Sezione A per pedagogisti (magistrale), Sezione B per educatori (triennale).",
+    "ministeroVigilanza": "Ministero dell'Istruzione e del Merito",
+    "aggiornatoAl": "2025-01-01"
+  }
+]
