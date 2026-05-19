@@ -13,13 +13,14 @@ spring:
     bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
 
 fetcher:
+  admin-secret: ${ADMIN_SECRET}
   schedule:
+    ordini: "0 0 1 1 2,8 *"
     courses: ${SCHEDULE_COURSES:0 0 3 1 8 *}
     bandi: ${SCHEDULE_BANDI:0 0 4 * * *}
     dottorati: ${SCHEDULE_DOTTORATI:0 0 5 * * *}
     inpa: ${SCHEDULE_INPA:0 0 6 * * *}
     epso: ${SCHEDULE_EPSO:0 0 2 * * 0}
-    ordini: ${SCHEDULE_ORDINI:0 0 1 1 * *}
   api:
     inpa-key: ${INPA_API_KEY}
     epso-key: ${EPSO_API_KEY}

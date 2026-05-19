@@ -24,7 +24,8 @@ public class DotenvLoader implements EnvironmentPostProcessor, Ordered {
       "POSTGRES_PASSWORD",
       "KAFKA_BOOTSTRAP_SERVERS",
       "INPA_API_KEY",
-      "EPSO_API_KEY"
+      "EPSO_API_KEY",
+      "ADMIN_SECRET"
   };
 
   @Override
