@@ -5,7 +5,7 @@ spring:
   task:
     scheduling:
       pool:
-        size: 1
+        size: 1   # IMPORTANT: 0 crashes in Spring Boot 4 — must be at least 1
   jpa:
     hibernate:
       ddl-auto: validate
@@ -14,10 +14,17 @@ spring:
     enabled: true
     locations: classpath:db/migration
 
-# Cron expressions set to never fire in tests (Feb 31 does not exist)
+# Cron expressions set to an impossible date (February 31 never exists)
+# to prevent any scheduled job from firing during tests.
 fetcher:
   schedule:
     ordini: "0 0 0 31 2 *"
+    iscritti: "0 0 0 31 2 *"
+    immatricolati: "0 0 0 31 2 *"
+  mur:
+    ckan-base-url: https://dati-ustat.mur.gov.it   # not called in tests — classpath fallback is used
+    iscritti-dataset-id: iscritti
+    immatricolati-dataset-id: immatricolati
 
 logging:
   level:

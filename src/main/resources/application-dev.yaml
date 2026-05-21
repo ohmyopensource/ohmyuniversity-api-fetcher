@@ -20,12 +20,14 @@ spring:
 fetcher:
   admin-secret: ${ADMIN_SECRET}
   schedule:
-    courses: "0 0 3 1 8 *"        # August 1st at 3:00
-    bandi: "0 0 4 * * *"          # every day at 4:00
-    dottorati: "0 0 5 * * *"      # every day at 5:00
-    inpa: "0 0 6 * * *"           # every day at 6:00
-    epso: "0 0 2 * * 0"           # every Sunday at 2:00
-    ordini: "0 0 1 1 2,8 *"       # first day of the month at 1:00
+    ordini: "0 0 1 1 2,8 *"           # February 1st and August 1st at 01:00
+    iscritti: "0 0 2 1 10 *"          # October 1st at 02:00
+    immatricolati: "0 0 2 15 10 *"    # October 15th at 02:00
+    courses: "0 0 3 1 8 *"            # August 1st at 03:00
+    bandi: "0 0 4 * * *"              # every day at 04:00
+    dottorati: "0 0 5 * * *"          # every day at 05:00
+    inpa: "0 0 6 * * *"               # every day at 06:00
+    epso: "0 0 2 * * 0"               # every Sunday at 02:00
   api:
     inpa-key: ${INPA_API_KEY}
     epso-key: ${EPSO_API_KEY}

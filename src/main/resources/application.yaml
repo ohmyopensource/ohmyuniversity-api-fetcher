@@ -24,3 +24,9 @@ spring:
 
 server:
   port: 8080
+
+fetcher:
+  mur:
+    ckan-base-url: https://dati-ustat.mur.gov.it
+    iscritti-dataset-id: iscritti
+    immatricolati-dataset-id: immatricolati
