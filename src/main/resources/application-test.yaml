@@ -21,10 +21,12 @@ fetcher:
     ordini: "0 0 0 31 2 *"
     iscritti: "0 0 0 31 2 *"
     immatricolati: "0 0 0 31 2 *"
+    laureati: "0 0 0 31 2 *"
   mur:
-    ckan-base-url: https://dati-ustat.mur.gov.it   # not called in tests — classpath fallback is used
+    ckan-base-url: https://dati-ustat.mur.gov.it
     iscritti-dataset-id: iscritti
     immatricolati-dataset-id: immatricolati
+    laureati-dataset-id: laureati
 
 logging:
   level:

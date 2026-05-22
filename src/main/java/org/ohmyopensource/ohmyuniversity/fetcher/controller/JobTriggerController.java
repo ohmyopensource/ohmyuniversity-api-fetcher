@@ -2,6 +2,7 @@ package org.ohmyopensource.ohmyuniversity.fetcher.controller;
 
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.immatricolati.ImmatricolatiJobConfig;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.iscritti.IscrittixCorsoJobConfig;
+import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.laureati.LaureatiPerCorsoJobConfig;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.ordini.OrdiniJobConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,13 +22,16 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * REST controller for manually triggering batch jobs.
  *
- * Protected by a shared admin secret header (X-Admin-Secret).
- * Only requests with the correct secret are accepted.
- * This prevents unauthorized job execution while still allowing
- * administrators to trigger jobs on demand (e.g. after a failure).
+ * <p>Protected by a shared admin secret header (X-Admin-Secret).
+ * Spring Batch prevents duplicate concurrent executions automatically.
  *
- * Spring Batch prevents duplicate concurrent executions automatically —
- * if a job is already running, a second trigger is rejected safely.
+ * <p>Available jobs:
+ * <ul>
+ *   <li>{@code ordini} — Italian professional orders</li>
+ *   <li>{@code iscritti} — enrolled students per course, university and degree class</li>
+ *   <li>{@code immatricolati} — first-year students per class and per university</li>
+ *   <li>{@code laureati} — graduates per course, university and degree class</li>
+ * </ul>
  */
 @RestController
 @RequestMapping("/api/jobs")
@@ -40,6 +44,7 @@ public class JobTriggerController {
   private final Job ordiniJob;
   private final Job iscrittixCorsoJob;
   private final Job immatricolatiJob;
+  private final Job laureatiPerCorsoJob;
 
   @Value("${fetcher.admin-secret}")
   private String adminSecret;
@@ -48,22 +53,24 @@ public class JobTriggerController {
       JobOperator jobOperator,
       @Qualifier(OrdiniJobConfig.JOB_NAME) Job ordiniJob,
       @Qualifier(IscrittixCorsoJobConfig.JOB_NAME) Job iscrittixCorsoJob,
-      @Qualifier(ImmatricolatiJobConfig.JOB_NAME) Job immatricolatiJob) {
+      @Qualifier(ImmatricolatiJobConfig.JOB_NAME) Job immatricolatiJob,
+      @Qualifier(LaureatiPerCorsoJobConfig.JOB_NAME) Job laureatiPerCorsoJob) {
     this.jobOperator = jobOperator;
     this.ordiniJob = ordiniJob;
     this.iscrittixCorsoJob = iscrittixCorsoJob;
     this.immatricolatiJob = immatricolatiJob;
+    this.laureatiPerCorsoJob = laureatiPerCorsoJob;
   }
 
   /**
-   * Triggera un job per nome.
+   * Triggers a batch job by name.
    *
-   * @param jobName      nome del job: "ordini", "iscritti", "immatricolati"
-   * @param secretHeader valore dell'header X-Admin-Secret
-   * @return 202 Accepted se il job è partito,
-   *         401 se il secret è errato,
-   *         404 se il nome job è sconosciuto,
-   *         409 se il job è già in esecuzione o fallisce l'avvio
+   * @param jobName      job name: "ordini", "iscritti", "immatricolati", "laureati"
+   * @param secretHeader value of the X-Admin-Secret header
+   * @return 202 Accepted if the job started,
+   *         401 if the secret is wrong,
+   *         404 if the job name is unknown,
+   *         409 if the job is already running or failed to start
    */
   @PostMapping("/{jobName}/run")
   public ResponseEntity<String> triggerJob(
@@ -94,14 +101,12 @@ public class JobTriggerController {
     }
   }
 
-  // ================================
-  // Private helpers
-  // ================================
   private Job resolveJob(String jobName) {
     return switch (jobName) {
       case "ordini" -> ordiniJob;
       case "iscritti" -> iscrittixCorsoJob;
       case "immatricolati" -> immatricolatiJob;
+      case "laureati" -> laureatiPerCorsoJob;
       default -> null;
     };
   }

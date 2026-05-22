@@ -9,22 +9,24 @@ import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.common.MurCsvReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.ExitStatus;
+import org.springframework.batch.core.step.StepExecution;
 import org.springframework.batch.core.job.Job;
 import org.springframework.batch.core.job.builder.JobBuilder;
+import org.springframework.batch.core.listener.StepExecutionListener;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.Step;
-import org.springframework.batch.core.step.StepExecution;
-import org.springframework.batch.core.listener.StepExecutionListener;
 import org.springframework.batch.core.step.builder.ChunkOrientedStepBuilder;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 
 /**
  * Spring Batch configuration for the immatricolati job.
  *
- * If the first step fails, the second step is skipped and the job is marked FAILED.
- * This is intentional: partial data from different runs could be inconsistent.
+ * Processor and writer use {@code @Scope("step")} with {@code proxyMode = TARGET_CLASS}
+ * to avoid ScopeNotActiveException at startup.
  */
 @Configuration
 public class ImmatricolatiJobConfig {
@@ -47,11 +49,13 @@ public class ImmatricolatiJobConfig {
   }
 
   @Bean
+  @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS)
   public ImmatricolatiPerClasseProcessor immatricolatiPerClasseProcessor() {
     return new ImmatricolatiPerClasseProcessor();
   }
 
   @Bean
+  @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS)
   public ImmatricolatiPerClasseWriter immatricolatiPerClasseWriter(
       StatisticaImmatricolatiClasseRepository repository,
       ImmatricolatiPerClasseProcessor processor) {
@@ -94,11 +98,13 @@ public class ImmatricolatiJobConfig {
   }
 
   @Bean
+  @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS)
   public ImmatricolatiPerAteneoProcessor immatricolatiPerAteneoProcessor() {
     return new ImmatricolatiPerAteneoProcessor();
   }
 
   @Bean
+  @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS)
   public ImmatricolatiPerAteneoWriter immatricolatiPerAteneoWriter(
       StatisticaImmatricolatiAteneoRepository repository,
       ImmatricolatiPerAteneoProcessor processor) {

@@ -2,6 +2,7 @@ package org.ohmyopensource.ohmyuniversity.fetcher.config;
 
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.immatricolati.ImmatricolatiJobConfig;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.iscritti.IscrittixCorsoJobConfig;
+import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.laureati.LaureatiPerCorsoJobConfig;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.ordini.OrdiniJobConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,16 +14,20 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-
 /**
- * Scheduler that triggers Spring Batch jobs on cron expressions
- * defined in application-dev.yaml / application-prod.yaml.
+ * Scheduler for all batch jobs.
  *
- * Each job run gets a unique timestamp parameter so Spring Batch
- * does not skip it as a duplicate of a previous successful run.
+ * <p>All cron expressions are read from {@code application.yaml} via {@code @Scheduled}
+ * so they can be overridden per environment without code changes.
+ * In tests, all crons are set to the impossible date "Feb 31" to prevent any firing.
  *
- * Scheduling is disabled in tests via application-test.yaml:
- * {@code spring.task.scheduling.pool.size: 0}
+ * <p>Production schedule:
+ * <ul>
+ *   <li>ordiniJob — February 1st and August 1st at 01:00 (semi-annual data)</li>
+ *   <li>iscrittixCorsoJob — October 1st at 02:00 (MUR publishes in September)</li>
+ *   <li>immatricolatiJob — October 15th at 02:00 (follows iscritti publication)</li>
+ *   <li>laureatiPerCorsoJob — November 1st at 03:00 (MUR publishes in October)</li>
+ * </ul>
  */
 @Component
 public class SchedulerConfig {
@@ -33,34 +38,39 @@ public class SchedulerConfig {
   private final Job ordiniJob;
   private final Job iscrittixCorsoJob;
   private final Job immatricolatiJob;
+  private final Job laureatiPerCorsoJob;
 
   public SchedulerConfig(
       JobOperator jobOperator,
       @Qualifier(OrdiniJobConfig.JOB_NAME) Job ordiniJob,
       @Qualifier(IscrittixCorsoJobConfig.JOB_NAME) Job iscrittixCorsoJob,
-      @Qualifier(ImmatricolatiJobConfig.JOB_NAME) Job immatricolatiJob) {
+      @Qualifier(ImmatricolatiJobConfig.JOB_NAME) Job immatricolatiJob,
+      @Qualifier(LaureatiPerCorsoJobConfig.JOB_NAME) Job laureatiPerCorsoJob) {
     this.jobOperator = jobOperator;
     this.ordiniJob = ordiniJob;
     this.iscrittixCorsoJob = iscrittixCorsoJob;
     this.immatricolatiJob = immatricolatiJob;
+    this.laureatiPerCorsoJob = laureatiPerCorsoJob;
   }
 
-  /** Ordini professionali — 1 feb e 1 ago alle 01:00. */
   @Scheduled(cron = "${fetcher.schedule.ordini}")
   public void runOrdiniJob() {
     runJob(ordiniJob, OrdiniJobConfig.JOB_NAME);
   }
 
-  /** Iscritti per corso — 1 ottobre alle 02:00. */
   @Scheduled(cron = "${fetcher.schedule.iscritti}")
   public void runIscrittixCorsoJob() {
     runJob(iscrittixCorsoJob, IscrittixCorsoJobConfig.JOB_NAME);
   }
 
-  /** Immatricolati — 15 ottobre alle 02:00. */
   @Scheduled(cron = "${fetcher.schedule.immatricolati}")
   public void runImmatricolatiJob() {
     runJob(immatricolatiJob, ImmatricolatiJobConfig.JOB_NAME);
+  }
+
+  @Scheduled(cron = "${fetcher.schedule.laureati}")
+  public void runLaureatiPerCorsoJob() {
+    runJob(laureatiPerCorsoJob, LaureatiPerCorsoJobConfig.JOB_NAME);
   }
 
   private void runJob(Job job, String jobName) {

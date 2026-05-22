@@ -6,29 +6,27 @@ import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.common.CkanClient;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.common.MurCsvReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.batch.core.ExitStatus;
+import org.springframework.batch.core.step.StepExecution;
 import org.springframework.batch.core.job.Job;
 import org.springframework.batch.core.job.builder.JobBuilder;
+import org.springframework.batch.core.listener.StepExecutionListener;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.Step;
-import org.springframework.batch.core.step.StepExecution;
-import org.springframework.batch.core.listener.StepExecutionListener;
 import org.springframework.batch.core.step.builder.ChunkOrientedStepBuilder;
-import org.springframework.batch.core.ExitStatus;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 
 /**
  * Spring Batch configuration for the iscritti-per-corso job.
  *
- * <p>Single step with chunk size 1000. The processor accumulates all records
+ * Single step with chunk size 1000. The processor accumulates all records
  * in memory and aggregates M+F totals — the writer must therefore be notified
  * at the end of the step via {@code StepExecutionListener.afterStep} to trigger
  * the final flush.
- *
- * <p>The high chunk size is intentional: since the processor always returns null,
- * Spring Batch accumulates up to the chunk size before calling the writer, which
- * receives an empty chunk. The real write happens in afterStep.
  */
 @Configuration
 public class IscrittixCorsoJobConfig {
@@ -47,11 +45,13 @@ public class IscrittixCorsoJobConfig {
   }
 
   @Bean
+  @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS)
   public IscrittixCorsoProcessor iscrittixCorsoProcessor() {
     return new IscrittixCorsoProcessor();
   }
 
   @Bean
+  @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS)
   public IscrittixCorsoWriter iscrittixCorsoWriter(
       StatisticaIscrittiRepository repository,
       IscrittixCorsoProcessor processor) {

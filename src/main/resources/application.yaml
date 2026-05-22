@@ -30,3 +30,4 @@ fetcher:
     ckan-base-url: https://dati-ustat.mur.gov.it
     iscritti-dataset-id: iscritti
     immatricolati-dataset-id: immatricolati
+    laureati-dataset-id: laureati
