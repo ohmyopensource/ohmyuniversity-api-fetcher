@@ -17,6 +17,7 @@ spring:
 # Cron expressions set to an impossible date (February 31 never exists)
 # to prevent any scheduled job from firing during tests.
 fetcher:
+  admin-secret: test-secret
   schedule:
     ordini: "0 0 0 31 2 *"
     iscritti: "0 0 0 31 2 *"
