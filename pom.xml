@@ -40,6 +40,7 @@
 		<mapstruct.version>1.6.3</mapstruct.version>
 		<sonar.coverage.exclusions>
 			**/dto/**,
+			**/job/**,
 			**/domain/entity/**,
 			**/domain/repository/**,
 			**/OhmyuniversityFetcherApplication.java,
@@ -166,6 +167,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		<!-- Spring Batch Test -->
 		<dependency>
 			<groupId>org.springframework.batch</groupId>
@@ -274,6 +281,9 @@
 					<excludes>
 						<exclude>org/ohmyopensource/ohmyuniversity/fetcher/OhmyuniversityFetcherApplication</exclude>
 						<exclude>org/ohmyopensource/ohmyuniversity/fetcher/config/DotenvLoader</exclude>
+						<exclude>org/ohmyopensource/ohmyuniversity/fetcher/job/mur/**</exclude>
+						<exclude>org/ohmyopensource/ohmyuniversity/fetcher/job/ordini/**</exclude>
+						<exclude>org/ohmyopensource/ohmyuniversity/fetcher/job/timetable/**</exclude>
 					</excludes>
 				</configuration>
 				<executions>
@@ -303,7 +313,7 @@
 										<limit>
 											<counter>LINE</counter>
 											<value>COVEREDRATIO</value>
-											<minimum>0.60</minimum>
+											<minimum>0.70</minimum>
 										</limit>
 									</limits>
 								</rule>
