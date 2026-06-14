@@ -1,0 +1,1582 @@
+{
+  "university_id": "UNIMOL",
+  "university_name": "Università degli Studi del Molise",
+  "scraped_at": "2026-06-14T08:12:06Z",
+  "total_pages": 64,
+  "total_pdfs": 237,
+  "timetables": [
+    {
+      "department_id": "agricoltura-ambiente-e-alimenti",
+      "department_name": "Agricoltura, Ambiente e Alimenti",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_degli_alimenti_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_I_anno_STA_91b20a4216.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_II_semestre_Scienze_e_Tecnologie_degli_Alimenti_I_anno_876fb5a09d.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Crediti_a_scelta_corsi_di_laurea_triennali_a1daf4e7ce.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "agricoltura-ambiente-e-alimenti",
+      "department_name": "Agricoltura, Ambiente e Alimenti",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_agrarie_forestali_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_I_anno_STAF_7bcd460026.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_II_anno_STAF_e9a1b02717.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_III_anno_STAF_2d78196ccd.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_fb32366e74.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_II_semestre_STAF_I_anno_dabb7cc1ac.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_II_semestre_STAF_II_anno_d61d30c92d.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_II_semestre_STAF_III_anno_4ca4a49b41.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Crediti_a_scelta_corsi_di_laurea_triennali_a1daf4e7ce.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "agricoltura-ambiente-e-alimenti",
+      "department_name": "Agricoltura, Ambiente e Alimenti",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_culture_cibo_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/12d_calendario_attivita_didattiche_a_a_2024_2025_84a73905df.pdf",
+          "label": "CALENDARIO ATTIVITA' DIDATTICA 2024/2025"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_III_anno_SCC_f91aa244fd.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_esami_a_scelta_I_semestre_2024_2025_acdb87c07f.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/CALENDARIO_LEZIONI_SCC_III_anno_cacca992c9.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Date_incontri_e_orario_insegnamenti_a_scelta_II_semestre_044db338fe.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "agricoltura-ambiente-e-alimenti",
+      "department_name": "Agricoltura, Ambiente e Alimenti",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_alimentari_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_II_anno_ALI_58ef692c31.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_III_anno_ALI_71e6238192.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_II_semestre_ALI_II_anno_6704700d92.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_II_semestre_ALI_III_anno_f1d368d799.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Crediti_a_scelta_corsi_di_laurea_triennali_a1daf4e7ce.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "agricoltura-ambiente-e-alimenti",
+      "department_name": "Agricoltura, Ambiente e Alimenti",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_sistemi_alimentari_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_I_anno_STSA_92fe6b9e33.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_lezioni_II_semestre_Scienze_e_tecnologie_dei_sistemi_alimentari_a3be8ef362.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_II_semestre_2025_2026_3b4e4feee7.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "agricoltura-ambiente-e-alimenti",
+      "department_name": "Agricoltura, Ambiente e Alimenti",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_agrarie_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_I_anno_ST_Ag_bd0178c413.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_II_anno_ST_Ag_648ed6e3ba.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_II_semestre_AGRM_I_anno_315c1e01bb.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_II_semestre_2025_2026_3b4e4feee7.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "agricoltura-ambiente-e-alimenti",
+      "department_name": "Agricoltura, Ambiente e Alimenti",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_forestali_ambientali_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_I_anno_STFA_7b531e0a5d.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_II_anno_STFA_07c4af95e3.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/CALENDARIO_LEZIONI_STFA_I_anno_23de2a2340.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/CALENDARIO_LEZIONI_STFA_II_anno_bf5c4fb9e5.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_II_semestre_2025_2026_3b4e4feee7.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "agricoltura-ambiente-e-alimenti",
+      "department_name": "Agricoltura, Ambiente e Alimenti",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/nutrizione_biosicurezza_alimenti_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_I_anno_NBA_08abe281de.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_II_anno_NBA_ffea087ba6.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_lezioni_I_anno_II_semestre_NBA_b0c905c5b4.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_lezioni_II_anno_II_semestre_NBA_1519626b5d.pdfd91.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_II_semestre_2025_2026_3b4e4feee7.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "agricoltura-ambiente-e-alimenti",
+      "department_name": "Agricoltura, Ambiente e Alimenti",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_alimentari_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_II_anno_ALI_58ef692c31.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_III_anno_ALI_71e6238192.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_II_semestre_ALI_II_anno_6704700d92.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_II_semestre_ALI_III_anno_f1d368d799.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Crediti_a_scelta_corsi_di_laurea_triennali_a1daf4e7ce.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/scienze_biologiche_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/410_orario_lezioni_Isem_Ianno_2025_26_b0dda446e4.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/410_orario_lezioni_Isem_I_Ianno_2025_26_c202ad2f12.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/410_orario_lezioni_Isem_II_Ianno_2025_26_22e6cfafb7.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/410_orario_lezioni_Isem_II_Ianno_ADE_2025_26_4cd62d61eb.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/410_Ianno_I_Isem_25_26_2ea27fecf7.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/410_I_Ianno_I_Isem_25_26_3c8c59739a.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/410_II_Ianno_I_Isem_25_26_ba484bad25.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/410_ADE_I_Isem_25_26_85c9c23768.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/scienze_turistiche_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_ST_2_anno_Tsl_Et_1_sem2025_2026_c9f1e377e4.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_ST_3_anno_Tsl_Et_1_sem2025_2026_150eebf2c0.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_Att_didat_extra_ADE_2025_2026_f779857146.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_orario_ST_2_anno_Tsl_Et_2_sem_2025_26_b7d485e167.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_orario_ST_3_anno_Tsl_Et_2_sem_2025_26_8c8e775a44.pdf",
+          "label": "TERZO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/informatica_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_Isem_2025_26_Ianno_Termoli_fcc28dd1b2.pdf",
+          "label": "PRIMO ANNO CV \"SOFTWARE TECHNOLOGIES\" SEDE DI TERMOLI"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_Isem_2025_26_Ianno_Pesche_ff39436103.pdf",
+          "label": "PRIMO ANNO CV \"COMPUTER SCIENCE\" SEDE DI PESCHE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_Isem_2025_26_I_Ianno_Termoli_e430e755ee.pdf",
+          "label": "SECONDO ANNO CV \"SOFTWARE TECHNOLOGIES\" SEDE DI TERMOLI"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_Isem_2025_26_I_Ianno_Pesche_00bec604c6.pdf",
+          "label": "SECONDO ANNO CV \"COMPUTER SCIENCE\" SEDE DI PESCHE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_Isem_2025_26_II_Ianno_Termoli_77c8a771d9.pdf",
+          "label": "TERZO ANNO \"CV SOFTWARE TECHNOLOGIES\" SEDE DI TERMOLI"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_Isem_2025_26_II_Ianno_Pesche_1bed11b029.pdf",
+          "label": "TERZO ANNO CV \"COMPUTER SCIENCE\" SEDE DI PESCHE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_Isem_2025_26_II_Ianno_ADE_e48408fff0.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_Ia_I_Isem_25_26_Termoli_22f32db69c.pdf",
+          "label": "PRIMO ANNO CV \"SOFTWARE TECHNOLOGIES\" SEDE DI TERMOLI"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_Ia_I_Isem_25_26_Pesche_de778eed17.pdf",
+          "label": "PRIMO ANNO CV \"COMPUTER SCIENCE\" SEDE DI PESCHE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_I_Ia_I_Isem_25_26_Termoli_9d76e6df4b.pdf",
+          "label": "SECONDO ANNO CV \"SOFTWARE TECHNOLOGIES\" SEDE DI TERMOLI"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_I_Ia_I_Isem_25_26_Pesche_5ec4ccc2bb.pdf",
+          "label": "SECONDO ANNO CV \"COMPUTER SCIENCE\" SEDE DI PESCHE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_II_Ia_I_Isem_25_26_Termoli_b247a86ae8.pdf",
+          "label": "TERZO ANNO CV \"SOFTWARE TECHNOLOGIES\" SEDE DI TERMOLI"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_II_Ia_I_Isem_25_26_Pesche_d02de49417.pdf",
+          "label": "TERZO ANNO CV \"COMPUTER SCIENCE\" SEDE DI PESCHE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/411_ADE_I_Isem_25_26_a96b9e3009.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/Ingegneria_sostenibilita_sicurezza_costruzioni_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/424_orario_lezioni_Ianno_Isemestre_2025_26_e54082afef.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/424_orario_lezioni_I_Ianno_Isemestre_2025_26_1f90a31889.pdf",
+          "label": "SECONDO ANNO - PERCORSO 1"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/424_orario_lezioni_II_Ianno_Isemestre_2025_26_947575fc70.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/424_Ianno_I_Isem_25_26_82c9beef94.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/424_I_Ianno_I_Isem_25_26_df8da1991c.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/424_II_Ianno_I_Isem_25_26_2f12f76757.pdf",
+          "label": "TERZO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_culture_cibo_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/12d_calendario_attivita_didattiche_a_a_2024_2025_84a73905df.pdf",
+          "label": "CALENDARIO ATTIVITA' DIDATTICA 2024/2025"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_III_anno_SCC_f91aa244fd.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_esami_a_scelta_I_semestre_2024_2025_acdb87c07f.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/CALENDARIO_LEZIONI_SCC_III_anno_cacca992c9.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Date_incontri_e_orario_insegnamenti_a_scelta_II_semestre_044db338fe.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/scienze_del_turismo_ambientale_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_STA_1_anno_1_sem2025_2026_17dc85700c.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_Att_didat_extra_ADE_2025_2026_edf3d09a9b.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_orario_STA_1_anno_2_sem2025_26_fe5971e571.pdf",
+          "label": "PRIMO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/biologia_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1412_orario_lezioni_Isem_Ianno_2025_26_9887fc8179.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1412_orario_lezioni_Isem_I_Ianno_2025_26_6c842d586e.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1412_orario_lezioni_Isem_I_Ianno_ADE_2025_26_e7521efe8b.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1412_Ianno_I_Isem_25_26_e21ce31287.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1412_ADE_I_Isem_25_26_0ad25c39e6.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/ingegneria_civile_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1408_orario_lezioni_Ianno_Isemestre_2025_26_837f6ea630.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1408_orario_lezioni_I_Ianno_Isemestre_2025_26_dec65cd772.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1408_Ianno_I_Isem_25_26_b03db0ace8.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1408_I_Ianno_I_Isem_25_26_c41a464b89.pdf",
+          "label": "SECONDO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/sicurezza_sistemi_software_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1421_Isem_2025_26_Ianno_d0fe9d7ac1.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1421_Isem_2025_26_I_Ianno_970b3d7b63.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1421_Isem_2025_26_I_Ianno_ADE_120f40415a.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1421_Ia_I_Isem_25_26_06f138d063.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1421_ADE_I_Isem_25_26_8d6f053467.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/nutrizione_biosicurezza_alimenti_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_I_anno_NBA_08abe281de.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_II_anno_NBA_ffea087ba6.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_lezioni_I_anno_II_semestre_NBA_b0c905c5b4.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_lezioni_II_anno_II_semestre_NBA_1519626b5d.pdfd91.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_II_semestre_2025_2026_3b4e4feee7.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/management_turismo_beni_culturali_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_MTBC_2_anno_1_sem_2025_2026_0c13402e05.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_Att_didat_extra_ADE_2025_2026_f8a1bd8168.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_orario_MTBC_2_anno_2_sem2025_26_475ec3f00b.pdf",
+          "label": "SECONDO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_forestali_ambientali_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_I_anno_STFA_7b531e0a5d.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_II_anno_STFA_07c4af95e3.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/CALENDARIO_LEZIONI_STFA_I_anno_23de2a2340.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/CALENDARIO_LEZIONI_STFA_II_anno_bf5c4fb9e5.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_II_semestre_2025_2026_3b4e4feee7.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "bioscienze-e-territorio",
+      "department_name": "Bioscienze e Territorio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/progettazione_e_gestione_dei_sistemi_turistici_patrimoniali_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_PGSTP_1_anno_1_sem_2025_2026_8ef8f30741.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/0_orario_PGSTP_1_anno_2_sem2025_26_105c157cab.pdf",
+          "label": "PRIMO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/economia_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_Lezioni_di_Economia_Aziendale_1_semestre_A_A_2025_26_1_anno_31e22099ed.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_Lezioni_di_Economia_Aziendale_1_semestre_A_A_2025_26_2_anno_2_9fe20ee92e.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Economia_Aziendale_3_anno_2_semestre_A_A_2025_26_18feb_22bd66c1ec.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/EA_Orario_1_anno_2_semestre_A_A_2025_26_34a0221349.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_Lezioni_di_Economia_Aziendale_2_semestre_A_A_2025_26_2_anno_1_fb9b0b4993.pdf",
+          "label": "SECONDO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politiche_amministrazione_relazioni_internazionali_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_nuova_2025_d0c027c355.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/A_scelta_00e44fb5d7.pdf",
+          "label": "ESAMI A SCELTA"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_II_semestre_PRIMO_ANNO_e4462c1789.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_esami_a_scelta_d2204257a3.pdf",
+          "label": "ESAMI A SCELTA"
+        }
+      ]
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/servizio_sociale_comunità_vulnerabilità_home",
+      "direct_pdf": true,
+      "note": "Caso anomalo: cliccando Lezioni si apre direttamente il PDF senza pagina intermedia.",
+      "pdfs": []
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/scienze_servizio_sociale_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LSSS_Orario_1_semestre_A_A_2025_26_2_ANNO_rev251120_2c190db02a.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LSSS_Orario_1_semestre_A_A_2025_26_3_ANNO_rev7_11_445a1e27ac.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LSSS_Orario_1_semestre_A_A_2023_24_b2d1c2298f.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LSSS_Orario_2_semestre_A_A_2025_26_3_ANNO_3a8c22d75a.pdf",
+          "label": "TERZO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politica_amministrazione_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_secondo_anno_14e32e9dd4.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_terzo_anno_aae3377dda.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/A_scelta_00e44fb5d7.pdf",
+          "label": "ESAMI A SCELTA"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_II_semestre_SECONDO_ANNO_2e8ed0653b.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_II_semestre_TERZO_ANNO_d8d9d7e644.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_esami_a_scelta_d2204257a3.pdf",
+          "label": "ESAMI A SCELTA"
+        }
+      ]
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/management_consulenza_aziendale_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LMMECA_Orario_1_semestre_2025_26_1_ANNO_5ba758c981.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LMMECA_Orario_1_semestre_2025_26_2_ANNO_639da58cc1.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LMMECA_Orario_2_semestre_2025_26_1_ANNO_d5427bde6d.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LMMECA_Orario_2_semestre_2025_26_2_ANNO_1_2db524fa43.pdf",
+          "label": "SECONDO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/public_and_health_economics_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/istituzioni_governance_global_studies_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_magistrale_2025_primo_anno_d0b09abc88.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/A_scelta_00e44fb5d7.pdf",
+          "label": "ESAMI A SCELTA"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_magistrale_2025_primo_anno_II_semestre_cccced64e5.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_esami_a_scelta_d2204257a3.pdf",
+          "label": "ESAMI A SCELTA"
+        }
+      ]
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/servizio_sociale_politiche_sociali_contrasto_vulnerabilità_home",
+      "direct_pdf": true,
+      "note": "Caso anomalo: cliccando Lezioni si apre direttamente il PDF senza pagina intermedia.",
+      "pdfs": []
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/servizio_sociale_politiche_sociali_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LMSSPS_Orario_1_semestre_2025_26_2_annorev211125_7b5210f98f.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/CORSO_DI_LAUREA_MAGISTRALE_IN_SERVIZIO_SOCIALE_E_POLITICHE_SOCIALI_c431d55c03.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LMSSPS_Orario_2_semestre_2025_26_1_ANNO_99128c3f46.pdf",
+          "label": "PRIMO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politiche_istituzioni_europee_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_magistrale_2025_secondo_anno_a60b948cf3.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/A_scelta_00e44fb5d7.pdf",
+          "label": "ESAMI A SCELTA"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_magistrale_2025_secondo_anno_II_semestre_83bbb11e05.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_esami_a_scelta_d2204257a3.pdf",
+          "label": "ESAMI A SCELTA"
+        }
+      ]
+    },
+    {
+      "department_id": "economia",
+      "department_name": "Economia",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/management_imprenditorialita_innovazione_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/LMMII_Orario_2_semestre_25_mar_2024_fefbe0e7f1.pdf",
+          "label": "SECONDO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "giuridico",
+      "department_name": "Giuridico",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/giuridico/corso/diritto_nuove_tecnologie_sicurezza_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1_anno_1_semestre_2025_26_0151293b73.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/2_anno_1_semestre_2025_26_cdbc8dffa7.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/3_anno_1_semestre_INNOVAZIONE_SOSTENIBILE_f48ec0d6f3.pdf",
+          "label": "TERZO ANNO CURRICULUM: INNOVAZIONE SOSTENIBILE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/3_anno_1_semestre_SICUREZZA_DIGITALE_2025_26_1fb95978d1.pdf",
+          "label": "TERZO ANNO CURRICULUM: SICUREZZA DIGITALE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/lezioni_insegnamenti_a_scelta_2025_26_48b6ab50b0.pdf",
+          "label": "CREDITI LIBERI"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1_anno_2_semestre_2025_26_de110d57f7.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/2_anno_2_semestre_2025_26_8d9b75daab.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/3_anno_2_semestre_INNOVAZIONE_SOSTENIBILE_fe06610482.pdf",
+          "label": "TERZO ANNO CURRICULUM: INNOVAZIONE SOSTENIBILE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/3_anno_2_semestre_SICUREZZA_DIGITALE_2025_26_543e0cbe0d.pdf",
+          "label": "TERZO ANNO CURRICULUM: SICUREZZA DIGITALE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/lezioni_insegnamenti_a_scelta_2_semestre_2025_26_888eb2ad83.pdf",
+          "label": "CREDITI LIBERI"
+        }
+      ]
+    },
+    {
+      "department_id": "giuridico",
+      "department_name": "Giuridico",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politiche_amministrazione_relazioni_internazionali_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_nuova_2025_d0c027c355.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/A_scelta_00e44fb5d7.pdf",
+          "label": "ESAMI A SCELTA"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_II_semestre_PRIMO_ANNO_e4462c1789.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_esami_a_scelta_d2204257a3.pdf",
+          "label": "ESAMI A SCELTA"
+        }
+      ]
+    },
+    {
+      "department_id": "giuridico",
+      "department_name": "Giuridico",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politica_amministrazione_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_secondo_anno_14e32e9dd4.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_terzo_anno_aae3377dda.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/A_scelta_00e44fb5d7.pdf",
+          "label": "ESAMI A SCELTA"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_II_semestre_SECONDO_ANNO_2e8ed0653b.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_triennale_2025_II_semestre_TERZO_ANNO_d8d9d7e644.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_esami_a_scelta_d2204257a3.pdf",
+          "label": "ESAMI A SCELTA"
+        }
+      ]
+    },
+    {
+      "department_id": "giuridico",
+      "department_name": "Giuridico",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/istituzioni_governance_global_studies_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_magistrale_2025_primo_anno_d0b09abc88.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/A_scelta_00e44fb5d7.pdf",
+          "label": "ESAMI A SCELTA"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_magistrale_2025_primo_anno_II_semestre_cccced64e5.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_esami_a_scelta_d2204257a3.pdf",
+          "label": "ESAMI A SCELTA"
+        }
+      ]
+    },
+    {
+      "department_id": "giuridico",
+      "department_name": "Giuridico",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politiche_istituzioni_europee_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_magistrale_2025_secondo_anno_a60b948cf3.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/A_scelta_00e44fb5d7.pdf",
+          "label": "ESAMI A SCELTA"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_magistrale_2025_secondo_anno_II_semestre_83bbb11e05.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Orario_lezioni_esami_a_scelta_d2204257a3.pdf",
+          "label": "ESAMI A SCELTA"
+        }
+      ]
+    },
+    {
+      "department_id": "giuridico",
+      "department_name": "Giuridico",
+      "degree_type": "magistrali_ciclo_unico",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/giuridico/corso/giurisprudenza_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1_anno_1_semestre_2025_26_1735a9eefb.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/2_anno_1_semestre_2025_26_5981a73a61.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/3_anno_1_semestre_2025_26_76ac046ab9.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/4_anno_1_semestre_2025_26_5e23567212.pdf",
+          "label": "QUARTO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/5_anno_1_semestre_2025_26_a903565c55.pdf",
+          "label": "QUINTO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_complementari_I_Sem_2025_26_3a35bb9885.pdf",
+          "label": "CREDITI LIBERI"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/1_anno_2_semestre_2025_26_70cdc8f526.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/2_anno_2_semestre_2025_26_6b09d545ba.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/3_anno_2_semestre_2025_26_14bffcd16d.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/4_anno_2_semestre_2025_26_55b070a97b.pdf",
+          "label": "QUARTO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/5_anno_2_semestre_2025_26_89d7a1c5eb.pdf",
+          "label": "QUINTO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_II_sem_2025_26_6530c16872.pdf",
+          "label": "CREDITI A SCELTA"
+        }
+      ]
+    },
+    {
+      "department_id": "giuridico",
+      "department_name": "Giuridico",
+      "degree_type": "magistrali_ciclo_unico",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/economia/corso/public_and_health_economics_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/fisioterapia_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/infermieristica_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/ingegneria_medica_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/ING_MEDICA_I_ANNO_aggiornato_8_ottobre_1_8f615978ce.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/ING_MEDICA_II_ANNO_aggiornato_8_ott_5645ece7ee.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Ing_Medica_calendario_lezioni_III_anno_agg_27_11_2025_bis_8d9a3ce04d.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/I_ANNO_ING_MED_bozza_II_sem_25_26_agg_23_02_2026_80d4b96e2b.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/II_ANNO_ING_MED_bozza_II_sem_25_26_agg_02_03_2026_aefe076460.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/III_ANNO_ING_MED_dal_2_aprile_agg_03_04_2026_021aee7498.pdf",
+          "label": "TERZO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_culture_cibo_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/12d_calendario_attivita_didattiche_a_a_2024_2025_84a73905df.pdf",
+          "label": "CALENDARIO ATTIVITA' DIDATTICA 2024/2025"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_III_anno_SCC_f91aa244fd.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_esami_a_scelta_I_semestre_2024_2025_acdb87c07f.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/CALENDARIO_LEZIONI_SCC_III_anno_cacca992c9.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Date_incontri_e_orario_insegnamenti_a_scelta_II_semestre_044db338fe.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_motorie_sportive_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/I_ANNO_LEZIONI_SCIENZE_MOTORIE_E_SPORTIVE_I_SEM_aggiornato_al_21_nov_744463dbfa.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/II_anno_lezioni_SMS_i_sem_agg_20_11_2025_64517c4f02.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/III_ANNO_LEZIONI_SCIENZE_MOTORIE_E_SPORTIVE_I_SEM_aggiornato_15_OTTOBRE_5026a5be41.pdf",
+          "label": "TERZO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/I_ANNO_SMS_aggiornato_24_MARZO_2026_f14ca42f4b.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/II_ANNO_SMS_aggiornato_24_marzo_2026_dc05d0bb18.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/III_ANNO_SMS_aggiornato_4_marzo_6df8a3de56.pdf",
+          "label": "TERZO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/tecniche_radiologia_medica_immagini_radioterapia_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/tecniche_prevenzione_ambiente_luoghi_lavoro_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/fisiopatologia_cardiocircolatoria_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/scienze_tecniche_psicologiche_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/ingegneria_biomedica_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/I_SEMESTRE_1_ANNO_LEZIONI_ING_BIOMEDICA_sede_UNIMOL_I_sem_aggiornato_17_ottobre_5d5a592560.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/ING_BIOMEDICA_1sem_2025_2026_UNICAS_78019ea4dd.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/lezioni_II_sem_1_anno_Unisannio_25_26_ing_Biomedica_agg_23_02_2026_67083de37c.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_lezioni_Ing_Biomedica_II_sem_A_A_2025_26_agg_26_02_2026_eb95cdcd36.pdf",
+          "label": "SECONDO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/management_sport_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/I_ANNO_MANAGEMENT_SPORT_aggiornato_al_15_OTTOBRE_698f84a8e7.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/II_ANNO_MANAGEMENT_DELLO_SPORT_aggiornato_al_17_ottobre_7980ea8cb0.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/I_ANNO_MANAGEMENT_DELLO_SPORT_agg_3_marzo_f44446f970.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/II_ANNO_MANAGEMENT_DELLO_SPORT_agg_24_marzo_2026_fe4d23bd0d.pdf",
+          "label": "SECONDO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/nutrizione_biosicurezza_alimenti_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_I_anno_NBA_08abe281de.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_I_semestre_II_anno_NBA_ffea087ba6.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_I_semestre_2025_2026_b83df648ed.pdf",
+          "label": "ADE"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_lezioni_I_anno_II_semestre_NBA_b0c905c5b4.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Calendario_lezioni_II_anno_II_semestre_NBA_1519626b5d.pdfd91.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Esami_a_scelta_II_semestre_2025_2026_3b4e4feee7.pdf",
+          "label": "ADE"
+        }
+      ]
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_professioni_sanitarie_prevenzione_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_tecniche_attivita_motorie_preventive_adattate_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/I_anno_AMPA_agg_al_28_11_2025_55f7a522fb.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/II_ANNO_AMPA_aggiornato_15_ott_1_6a4ad66d03.pdf",
+          "label": "SECONDO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/I_ANNO_AMPA_II_sem_7e2c28807f.pdf",
+          "label": "PRIMO ANNO"
+        },
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/II_ANNO_AMPA_II_sem_agg_5_marzo_68e44dd3f6.pdf",
+          "label": "SECONDO ANNO"
+        }
+      ]
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_infermieristiche_ostetriche_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/CALENDARIO_SIO_LEZION_fino_ad_APRILE_2024_dd037b2e15.pdf",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_riabilitative_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Frequenza_Lezioni_SRPS_aba112b3b1.pdf",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "department_id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "department_name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "degree_type": "magistrali_ciclo_unico",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/medicina_chirurgia_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/Frequenza_Lezioni_Medicina_a01cb60308.pdf",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "department_id": "scienze-umanistiche-sociali-e-della-formazione",
+      "department_name": "Scienze Umanistiche, Sociali e della Formazione",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/lettere_beni_culturali_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "scienze-umanistiche-sociali-e-della-formazione",
+      "department_name": "Scienze Umanistiche, Sociali e della Formazione",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/scienze_comunicazione_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/II_SEMESTRE_Insegnamenti_liberi_Dip_SU_Se_F_2024_25_ddbf915306.pdf",
+          "label": "INSEGNAMENTI LIBERI"
+        }
+      ]
+    },
+    {
+      "department_id": "scienze-umanistiche-sociali-e-della-formazione",
+      "department_name": "Scienze Umanistiche, Sociali e della Formazione",
+      "degree_type": "triennali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/scienze_tecniche_psicologiche_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "scienze-umanistiche-sociali-e-della-formazione",
+      "department_name": "Scienze Umanistiche, Sociali e della Formazione",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/letteratura_storia_arte_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": [
+        {
+          "pdf_url": "https://apistrapi.unimol.it/uploads/II_SEMESTRE_Insegnamenti_liberi_Dip_SU_Se_F_2024_25_ddbf915306.pdf",
+          "label": "INSEGNAMENTI LIBERI"
+        }
+      ]
+    },
+    {
+      "department_id": "scienze-umanistiche-sociali-e-della-formazione",
+      "department_name": "Scienze Umanistiche, Sociali e della Formazione",
+      "degree_type": "magistrali",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/psicologia_applicata_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    },
+    {
+      "department_id": "scienze-umanistiche-sociali-e-della-formazione",
+      "department_name": "Scienze Umanistiche, Sociali e della Formazione",
+      "degree_type": "magistrali_ciclo_unico",
+      "timetable_page_url": "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/scienze_formazione_primaria_lezioni",
+      "direct_pdf": false,
+      "note": "",
+      "pdfs": []
+    }
+  ]
+}

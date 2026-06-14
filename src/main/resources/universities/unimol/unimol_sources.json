@@ -1,0 +1,152 @@
+{
+  "university_id": "UNIMOL",
+  "university_name": "Università degli Studi del Molise",
+  "note": "Manually compiled on 2026-06-14. Contains all timetable source pages per department and course. Use this file as reference when the timetable scraper needs to be updated or reconfigured.",
+  "departments": [
+    {
+      "id": "agricoltura-ambiente-e-alimenti",
+      "name": "Agricoltura, Ambiente e Alimenti",
+      "home_url": "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/home",
+      "courses": {
+        "triennali": [
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_degli_alimenti_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_agrarie_forestali_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_culture_cibo_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_alimentari_lezioni"
+        ],
+        "magistrali": [
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_sistemi_alimentari_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_agrarie_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_forestali_ambientali_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/nutrizione_biosicurezza_alimenti_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_alimentari_lezioni"
+        ]
+      }
+    },
+    {
+      "id": "bioscienze-e-territorio",
+      "name": "Bioscienze e Territorio",
+      "home_url": "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/home",
+      "courses": {
+        "triennali": [
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/scienze_biologiche_lezioni",
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/scienze_turistiche_lezioni",
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/informatica_lezioni",
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/Ingegneria_sostenibilita_sicurezza_costruzioni_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_culture_cibo_lezioni",
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/scienze_del_turismo_ambientale_lezioni"
+        ],
+        "magistrali": [
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/biologia_lezioni",
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/ingegneria_civile_lezioni",
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/sicurezza_sistemi_software_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/nutrizione_biosicurezza_alimenti_lezioni",
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/management_turismo_beni_culturali_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_tecnologie_forestali_ambientali_lezioni",
+          "https://www3.unimol.it/dipartimenti/bioscienze-e-territorio/corso/progettazione_e_gestione_dei_sistemi_turistici_patrimoniali_lezioni"
+        ],
+        "note": "Ingegneria informatica, intelligenza artificiale e automazione è un corso nuovo non ancora avviato — nessun orario disponibile al momento."
+      }
+    },
+    {
+      "id": "economia",
+      "name": "Economia",
+      "home_url": "https://www3.unimol.it/dipartimenti/economia/home",
+      "courses": {
+        "triennali": [
+          "https://www3.unimol.it/dipartimenti/economia/corso/economia_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politiche_amministrazione_relazioni_internazionali_lezioni",
+          {
+            "url": "https://www3.unimol.it/dipartimenti/economia/corso/servizio_sociale_comunità_vulnerabilità_home",
+            "note": "Caso anomalo: cliccando Lezioni si apre direttamente il PDF senza pagina intermedia.",
+            "direct_pdf": true
+          },
+          "https://www3.unimol.it/dipartimenti/economia/corso/scienze_servizio_sociale_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politica_amministrazione_lezioni"
+        ],
+        "magistrali": [
+          "https://www3.unimol.it/dipartimenti/economia/corso/management_consulenza_aziendale_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/public_and_health_economics_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/istituzioni_governance_global_studies_lezioni",
+          {
+            "url": "https://www3.unimol.it/dipartimenti/economia/corso/servizio_sociale_politiche_sociali_contrasto_vulnerabilità_home",
+            "note": "Caso anomalo: cliccando Lezioni si apre direttamente il PDF senza pagina intermedia.",
+            "direct_pdf": true
+          },
+          "https://www3.unimol.it/dipartimenti/economia/corso/servizio_sociale_politiche_sociali_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politiche_istituzioni_europee_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/management_imprenditorialita_innovazione_lezioni"
+        ]
+      }
+    },
+    {
+      "id": "giuridico",
+      "name": "Giuridico",
+      "home_url": "https://www3.unimol.it/dipartimenti/giuridico/home",
+      "courses": {
+        "triennali": [
+          "https://www3.unimol.it/dipartimenti/giuridico/corso/diritto_nuove_tecnologie_sicurezza_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politiche_amministrazione_relazioni_internazionali_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politica_amministrazione_lezioni"
+        ],
+        "magistrali": [
+          "https://www3.unimol.it/dipartimenti/economia/corso/istituzioni_governance_global_studies_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/scienze_politiche_istituzioni_europee_lezioni"
+        ],
+        "magistrali_ciclo_unico": [
+          "https://www3.unimol.it/dipartimenti/giuridico/corso/giurisprudenza_lezioni",
+          "https://www3.unimol.it/dipartimenti/economia/corso/public_and_health_economics_lezioni"
+        ]
+      }
+    },
+    {
+      "id": "medicina-e-scienze-della-salute-vincenzo-tiberio",
+      "name": "Medicina e Scienze della Salute Vincenzo Tiberio",
+      "home_url": "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/home",
+      "courses": {
+        "triennali": [
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/fisioterapia_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/infermieristica_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/ingegneria_medica_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/scienze_culture_cibo_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_motorie_sportive_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/tecniche_radiologia_medica_immagini_radioterapia_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/tecniche_prevenzione_ambiente_luoghi_lavoro_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/fisiopatologia_cardiocircolatoria_lezioni",
+          "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/scienze_tecniche_psicologiche_lezioni"
+        ],
+        "magistrali": [
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/ingegneria_biomedica_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/management_sport_lezioni",
+          "https://www3.unimol.it/dipartimenti/agricoltura-ambiente-e-alimenti/corso/nutrizione_biosicurezza_alimenti_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_professioni_sanitarie_prevenzione_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_tecniche_attivita_motorie_preventive_adattate_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_infermieristiche_ostetriche_lezioni",
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/scienze_riabilitative_lezioni"
+        ],
+        "magistrali_ciclo_unico": [
+          "https://www3.unimol.it/dipartimenti/medicina-e-scienze-della-salute-vincenzo-tiberio/corso/medicina_chirurgia_lezioni"
+        ]
+      }
+    },
+    {
+      "id": "scienze-umanistiche-sociali-e-della-formazione",
+      "name": "Scienze Umanistiche, Sociali e della Formazione",
+      "home_url": "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/home",
+      "courses": {
+        "triennali": [
+          "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/lettere_beni_culturali_lezioni",
+          "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/scienze_comunicazione_lezioni",
+          "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/scienze_tecniche_psicologiche_lezioni"
+        ],
+        "magistrali": [
+          "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/letteratura_storia_arte_lezioni",
+          "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/psicologia_applicata_lezioni"
+        ],
+        "magistrali_ciclo_unico": [
+          "https://www3.unimol.it/dipartimenti/scienze-umanistiche-sociali-e-della-formazione/corso/scienze_formazione_primaria_lezioni"
+        ]
+      }
+    }
+  ]
+}
