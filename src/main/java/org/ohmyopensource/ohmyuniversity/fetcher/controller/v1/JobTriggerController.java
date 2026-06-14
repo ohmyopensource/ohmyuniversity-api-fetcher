@@ -1,4 +1,4 @@
-package org.ohmyopensource.ohmyuniversity.fetcher.controller;
+package org.ohmyopensource.ohmyuniversity.fetcher.controller.v1;
 
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.immatricolati.ImmatricolatiJobConfig;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.iscritti.IscrittixCorsoJobConfig;
@@ -22,16 +22,14 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * REST controller for manually triggering batch jobs.
  *
- * <p>Protected by a shared admin secret header (X-Admin-Secret).
+ * <p>Protected by a shared admin secret header ({@code X-Admin-Secret}).
  * Spring Batch prevents duplicate concurrent executions automatically.
  *
- * <p>Available jobs:
- * <ul>
- *   <li>{@code ordini} — Italian professional orders</li>
- *   <li>{@code iscritti} — enrolled students per course, university and degree class</li>
- *   <li>{@code immatricolati} — first-year students per class and per university</li>
- *   <li>{@code laureati} — graduates per course, university and degree class</li>
- * </ul>
+ * <p>Available jobs: {@code ordini} (Italian professional orders),
+ * {@code iscritti} (enrolled students per course, university and degree class),
+ * {@code immatricolati} (first-year students per class and per university),
+ * {@code laureati} (graduates per course, university and degree class),
+ * {@code timetables} (university timetable PDF links).
  */
 @RestController
 @RequestMapping("/api/jobs")
@@ -46,21 +44,39 @@ public class JobTriggerController {
   private final Job immatricolatiJob;
   private final Job laureatiPerCorsoJob;
 
+  private final Job importTimetablesJob;
+
   @Value("${fetcher.admin-secret}")
   private String adminSecret;
 
+  // ============ Constructor ============
+
+  /**
+   * Creates the controller with required job and operator dependencies.
+   *
+   * @param jobOperator        Spring Batch job operator used to start jobs
+   * @param ordiniJob          Italian professional orders job
+   * @param iscrittixCorsoJob  enrolled students per course job
+   * @param immatricolatiJob   first-year students job
+   * @param laureatiPerCorsoJob graduates per course job
+   * @param importTimetablesJob university timetable PDF links job
+   */
   public JobTriggerController(
       JobOperator jobOperator,
       @Qualifier(OrdiniJobConfig.JOB_NAME) Job ordiniJob,
       @Qualifier(IscrittixCorsoJobConfig.JOB_NAME) Job iscrittixCorsoJob,
       @Qualifier(ImmatricolatiJobConfig.JOB_NAME) Job immatricolatiJob,
-      @Qualifier(LaureatiPerCorsoJobConfig.JOB_NAME) Job laureatiPerCorsoJob) {
+      @Qualifier(LaureatiPerCorsoJobConfig.JOB_NAME) Job laureatiPerCorsoJob,
+      @Qualifier("importTimetablesJob") Job importTimetablesJob) {
     this.jobOperator = jobOperator;
     this.ordiniJob = ordiniJob;
     this.iscrittixCorsoJob = iscrittixCorsoJob;
     this.immatricolatiJob = immatricolatiJob;
     this.laureatiPerCorsoJob = laureatiPerCorsoJob;
+    this.importTimetablesJob = importTimetablesJob;
   }
+
+  // ============ Class Methods ============
 
   /**
    * Triggers a batch job by name.
@@ -101,12 +117,19 @@ public class JobTriggerController {
     }
   }
 
+  /**
+   * Resolves a job name to the corresponding {@link Job} bean.
+   *
+   * @param jobName the job name as received in the path variable
+   * @return the matching {@link Job}, or {@code null} if the name is unknown
+   */
   private Job resolveJob(String jobName) {
     return switch (jobName) {
       case "ordini" -> ordiniJob;
       case "iscritti" -> iscrittixCorsoJob;
       case "immatricolati" -> immatricolatiJob;
       case "laureati" -> laureatiPerCorsoJob;
+      case "timetables" -> importTimetablesJob;
       default -> null;
     };
   }

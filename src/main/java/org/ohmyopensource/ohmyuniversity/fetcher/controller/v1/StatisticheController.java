@@ -1,4 +1,4 @@
-package org.ohmyopensource.ohmyuniversity.fetcher.controller;
+package org.ohmyopensource.ohmyuniversity.fetcher.controller.v1;
 
 import java.util.List;
 import org.ohmyopensource.ohmyuniversity.fetcher.dto.ImmatricolatiAteneoResponse;
@@ -14,10 +14,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * REST controller for orientation statistics.
+ * REST controller exposing orientation statistics for prospective students.
  *
- * All endpoints are read-only and publicly accessible — no authentication required.
- * This data is intended for prospective students (guest users) exploring university options.
+ * <p>All endpoints are read-only and publicly accessible — no authentication is required.
+ * Data is populated exclusively by the MUR batch jobs and is intended for guest users
+ * exploring university options.
  */
 @RestController
 @RequestMapping("/api/statistiche")
@@ -25,24 +26,34 @@ public class StatisticheController {
 
   private final StatisticheService statisticheService;
 
+  // ============ Constructor ============
+
+  /**
+   * Creates the controller with the required service dependency.
+   *
+   * @param statisticheService service handling orientation statistics query logic
+   */
   public StatisticheController(StatisticheService statisticheService) {
     this.statisticheService = statisticheService;
   }
 
-  // ================================
-  // Iscritti
-  // ================================
+  // ============ Class Methods ============
 
   /**
-   * Returns enrolled students filtered by one of: classe, ateneo, or corso (partial match).
-   * If anno is also provided alongside classe or ateneo, it is used as an additional filter.
-   * At least one of classe, ateneo, or corso must be specified.
+   * Returns enrolled students filtered by degree class, university code, or course name.
    *
-   * @param classe  degree class code, e.g. "L-31"
-   * @param ateneo  university code, e.g. "101"
-   * @param corso   partial course name (case-insensitive)
-   * @param anno    academic year, e.g. "2023/2024"
-   * @return 200 with list of iscritti records, 400 if no filter specified
+   * <p>When {@code anno} is provided alongside {@code classe} or {@code ateneo}, it is used
+   * as an additional filter. When {@code corso} is provided it performs a case-insensitive
+   * partial match on the course name. At least one of {@code classe}, {@code ateneo}, or
+   * {@code corso} must be specified.
+   *
+   * @param classe  optional degree class code filter (e.g. {@code L-31})
+   * @param ateneo  optional university code filter (e.g. {@code 101})
+   * @param corso   optional partial course name filter (case-insensitive)
+   * @param anno    optional academic year filter (e.g. {@code 2023/2024}),
+   *                applied only when {@code classe} or {@code ateneo} is also present
+   * @return {@code 200 OK} with the list of matching records,
+   *         or {@code 400 Bad Request} if no filter is specified
    */
   @GetMapping("/iscritti")
   public ResponseEntity<List<IscrittiResponse>> getIscritti(
@@ -77,21 +88,21 @@ public class StatisticheController {
     return ResponseEntity.ok(result);
   }
 
-  // ================================
-  // Laureati
-  // ================================
-
   /**
-   * Returns graduates filtered by one of: classe, ateneo, or corso (partial match).
-   * If annoLaurea is also provided alongside classe or ateneo, it is used as
-   * an additional filter.
-   * At least one of classe, ateneo, or corso must be specified.
+   * Returns graduates filtered by degree class, university code, or course name.
    *
-   * @param classe     degree class code, e.g. "L-31"
-   * @param ateneo     university code, e.g. "101"
-   * @param corso      partial course name (case-insensitive)
-   * @param annoLaurea calendar graduation year, e.g. 2023
-   * @return 200 with list of laureati records, 400 if no filter specified
+   * <p>When {@code annoLaurea} is provided alongside {@code ateneo}, it is used as an
+   * additional filter. When {@code corso} is provided it performs a case-insensitive partial
+   * match on the course name. At least one of {@code classe}, {@code ateneo}, or
+   * {@code corso} must be specified.
+   *
+   * @param classe     optional degree class code filter (e.g. {@code L-31})
+   * @param ateneo     optional university code filter (e.g. {@code 101})
+   * @param corso      optional partial course name filter (case-insensitive)
+   * @param annoLaurea optional calendar graduation year filter (e.g. {@code 2023}),
+   *                   applied only when {@code ateneo} is also present
+   * @return {@code 200 OK} with the list of matching records,
+   *         or {@code 400 Bad Request} if no filter is specified
    */
   @GetMapping("/laureati")
   public ResponseEntity<List<LaureatiResponse>> getLaureati(
@@ -123,19 +134,18 @@ public class StatisticheController {
     return ResponseEntity.ok(result);
   }
 
-  // ================================
-  // Immatricolati
-  // ================================
-
   /**
-   * Returns first-year students by degree class.
-   * If classe is provided, returns the historical series for that class.
-   * If anno is provided without classe, returns all classes ranked by total for that year.
-   * At least one of classe or anno must be specified.
+   * Returns first-year enrolled students aggregated by degree class.
    *
-   * @param classe degree class code, e.g. "L-31"
-   * @param anno   academic year, e.g. "2023/2024"
-   * @return 200 with list, 400 if no filter specified
+   * <p>When {@code classe} is provided, returns the full historical series for that class.
+   * When only {@code anno} is provided, returns all degree classes ranked by total
+   * first-year students for that academic year. At least one of the two parameters
+   * must be specified.
+   *
+   * @param classe optional degree class code filter (e.g. {@code L-31})
+   * @param anno   optional academic year filter (e.g. {@code 2023/2024})
+   * @return {@code 200 OK} with the list of matching records,
+   *         or {@code 400 Bad Request} if no filter is specified
    */
   @GetMapping("/immatricolati/classe")
   public ResponseEntity<List<ImmatricolatiClasseResponse>> getImmatricolatiClasse(
@@ -160,14 +170,17 @@ public class StatisticheController {
   }
 
   /**
-   * Returns first-year students by university.
-   * If ateneo is provided, returns the historical series for that university.
-   * If anno is provided without ateneo, returns all universities ranked by total for that year.
-   * At least one of ateneo or anno must be specified.
+   * Returns first-year enrolled students aggregated by university.
    *
-   * @param ateneo university code, e.g. "101"
-   * @param anno   academic year, e.g. "2023/2024"
-   * @return 200 with list, 400 if no filter specified
+   * <p>When {@code ateneo} is provided, returns the full historical series for that
+   * university. When only {@code anno} is provided, returns all universities ranked by
+   * total first-year students for that academic year. At least one of the two parameters
+   * must be specified.
+   *
+   * @param ateneo optional university code filter (e.g. {@code 101})
+   * @param anno   optional academic year filter (e.g. {@code 2023/2024})
+   * @return {@code 200 OK} with the list of matching records,
+   *         or {@code 400 Bad Request} if no filter is specified
    */
   @GetMapping("/immatricolati/ateneo")
   public ResponseEntity<List<ImmatricolatiAteneoResponse>> getImmatricolatiAteneo(
@@ -191,18 +204,16 @@ public class StatisticheController {
     return ResponseEntity.ok(result);
   }
 
-  // ================================
-  // Tasso di completamento
-  // ================================
-
   /**
-   * Returns the estimated completion rate for all courses of a given degree class,
-   * comparing enrolled students in the given academic year against graduates 3 years later.
-   * Results are sorted by completion rate descending.
+   * Returns the estimated completion rate for all courses of a given degree class.
    *
-   * @param classe         degree class code, e.g. "L-31" (required)
-   * @param annoIscrizione academic year, e.g. "2019/2020" (required)
-   * @return 200 with ranked list, 400 if params are missing or malformed
+   * <p>Compares enrolled students in the given academic year against graduates three years
+   * later. Results are sorted by completion rate descending. Both parameters are required.
+   *
+   * @param classe         degree class code (e.g. {@code L-31})
+   * @param annoIscrizione academic year of enrolment (e.g. {@code 2019/2020})
+   * @return {@code 200 OK} with the ranked list,
+   *         or {@code 400 Bad Request} if parameters are missing or malformed
    */
   @GetMapping("/tasso-completamento")
   public ResponseEntity<List<TassoCompletamentoResponse>> getTassoCompletamento(
@@ -218,10 +229,13 @@ public class StatisticheController {
     }
   }
 
-  // ================================
-  // Private mapping helpers
-  // ================================
-
+  /**
+   * Maps a {@link org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaIscritti}
+   * entity to an {@link IscrittiResponse} DTO.
+   *
+   * @param e the source entity
+   * @return the populated response DTO
+   */
   private IscrittiResponse toIscrittiResponse(
       org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaIscritti e) {
     IscrittiResponse r = new IscrittiResponse();
@@ -237,6 +251,14 @@ public class StatisticheController {
     return r;
   }
 
+  /**
+   * Maps a
+   * {@link org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaLaureati}
+   * entity to a {@link LaureatiResponse} DTO.
+   *
+   * @param e the source entity
+   * @return the populated response DTO
+   */
   private LaureatiResponse toLaureatiResponse(
       org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaLaureati e) {
     LaureatiResponse r = new LaureatiResponse();
@@ -251,6 +273,14 @@ public class StatisticheController {
     return r;
   }
 
+  /**
+   * Maps a
+   * {@link org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaImmatricolatiClasse}
+   * entity to an {@link ImmatricolatiClasseResponse} DTO.
+   *
+   * @param e the source entity
+   * @return the populated response DTO
+   */
   private ImmatricolatiClasseResponse toImmatricolatiClasseResponse(
       org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaImmatricolatiClasse e) {
     ImmatricolatiClasseResponse r = new ImmatricolatiClasseResponse();
@@ -263,6 +293,14 @@ public class StatisticheController {
     return r;
   }
 
+  /**
+   * Maps a
+   * {@link org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaImmatricolatiAteneo}
+   * entity to an {@link ImmatricolatiAteneoResponse} DTO.
+   *
+   * @param e the source entity
+   * @return the populated response DTO
+   */
   private ImmatricolatiAteneoResponse toImmatricolatiAteneoResponse(
       org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaImmatricolatiAteneo e) {
     ImmatricolatiAteneoResponse r = new ImmatricolatiAteneoResponse();

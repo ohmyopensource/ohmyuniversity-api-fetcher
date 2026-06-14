@@ -19,6 +19,7 @@ spring:
 fetcher:
   admin-secret: test-secret
   schedule:
+    timetables: "0 0 0 31 2 *"
     ordini: "0 0 0 31 2 *"
     iscritti: "0 0 0 31 2 *"
     immatricolati: "0 0 0 31 2 *"

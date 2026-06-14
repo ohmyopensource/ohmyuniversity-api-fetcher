@@ -1,4 +1,4 @@
-package org.ohmyopensource.ohmyuniversity.fetcher.controller;
+package org.ohmyopensource.ohmyuniversity.fetcher.controller.v1;
 
 import java.util.List;
 import java.util.UUID;
@@ -14,16 +14,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * REST controller for professional orders data.
+ * REST controller exposing Italian professional orders data.
  *
- * <p>Read-only endpoints — all data is populated by the batch job.
- * No authentication required — this data is public information.
+ * <p>All endpoints are read-only — data is populated exclusively by the batch job.
+ * No authentication is required since professional orders are public information.
  *
- * <p>Intended consumers:
- * <ul>
- *   <li>Frontend — show students which orders they can join</li>
- *   <li>Other microservices — query orders by degree class</li>
- * </ul>
+ * <p>Intended consumers: the frontend (to show students which orders they can join)
+ * and other microservices (to query orders by degree class).
  */
 @RestController
 @RequestMapping("/api/ordini-professionali")
@@ -31,17 +28,29 @@ public class OrdineProfessionaleController {
 
   private final OrdineProfessionaleService service;
 
+  // ============ Constructor ============
+
+  /**
+   * Creates the controller with the required service dependency.
+   *
+   * @param service service handling professional order query logic
+   */
   public OrdineProfessionaleController(OrdineProfessionaleService service) {
     this.service = service;
   }
 
+  // ============ Class Methods ============
+
   /**
-   * Get all professional orders.
-   * Optionally filter by categoria or by classe di laurea.
+   * Returns all professional orders, optionally filtered by category or degree class.
    *
-   * @param categoria    optional category filter
-   * @param classeLaurea optional degree class filter (e.g. "LM-41", "LMG/01")
-   * @return list of matching orders
+   * <p>When both {@code categoria} and {@code classeLaurea} are provided,
+   * {@code classeLaurea} takes precedence. When neither is provided, all orders
+   * are returned.
+   *
+   * @param categoria    optional category filter (e.g. {@code LEGALE}, {@code SANITARIO})
+   * @param classeLaurea optional degree class filter (e.g. {@code LM-41}, {@code LMG/01})
+   * @return {@code 200 OK} with the list of matching {@link OrdineProfessionaleResponse} entries
    */
   @GetMapping
   public ResponseEntity<List<OrdineProfessionaleResponse>> getAll(
@@ -62,10 +71,10 @@ public class OrdineProfessionaleController {
   }
 
   /**
-   * Get a single professional order by its internal UUID.
+   * Returns a single professional order by its internal UUID.
    *
    * @param id the order UUID
-   * @return 200 with order data, 404 if not found
+   * @return {@code 200 OK} with the order data, or {@code 404 Not Found} if not found
    */
   @GetMapping("/{id}")
   public ResponseEntity<OrdineProfessionaleResponse> getById(@PathVariable UUID id) {
@@ -75,10 +84,12 @@ public class OrdineProfessionaleController {
         .orElse(ResponseEntity.notFound().build());
   }
 
-  // ================================
-  // Private mapping helpers
-  // ================================
-
+  /**
+   * Maps an {@link OrdineProfessionale} entity to an {@link OrdineProfessionaleResponse} DTO.
+   *
+   * @param entity the source entity
+   * @return the populated response DTO
+   */
   private OrdineProfessionaleResponse toResponse(OrdineProfessionale entity) {
     OrdineProfessionaleResponse response = new OrdineProfessionaleResponse();
     response.setId(entity.getId());
