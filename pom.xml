@@ -46,6 +46,10 @@
 			**/OhmyuniversityFetcherApplication.java,
 			**/config/DotenvLoader.java
 		</sonar.coverage.exclusions>
+		<sonar.cpd.exclusions>
+			**/dto/**,
+			**/domain/entity/**
+		</sonar.cpd.exclusions>
 	</properties>
 
 
