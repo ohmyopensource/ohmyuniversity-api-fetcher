@@ -40,9 +40,9 @@
 		<mapstruct.version>1.6.3</mapstruct.version>
 		<sonar.coverage.exclusions>
 			**/dto/**,
-			**/job/**,
 			**/domain/entity/**,
 			**/domain/repository/**,
+			**/job/**,
 			**/OhmyuniversityFetcherApplication.java,
 			**/config/DotenvLoader.java
 		</sonar.coverage.exclusions>
