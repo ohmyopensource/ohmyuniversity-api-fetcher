@@ -94,7 +94,8 @@ public class JobTriggerController {
       @RequestHeader(value = ADMIN_SECRET_HEADER, required = false) String secretHeader) {
 
     if (secretHeader == null || !secretHeader.equals(adminSecret)) {
-      log.warn("JobTriggerController: unauthorized trigger attempt for job '{}'", jobName);
+      log.warn("JobTriggerController: unauthorized trigger attempt for job '{}'",
+          jobName.replaceAll("[\r\n]", ""));
       return ResponseEntity.status(401).body("Unauthorized");
     }
 
@@ -108,10 +109,12 @@ public class JobTriggerController {
           .addLong("run.at", System.currentTimeMillis())
           .toJobParameters();
       jobOperator.start(job, params);
-      log.info("JobTriggerController: job '{}' triggered manually", jobName);
+      log.info("JobTriggerController: job '{}' triggered manually",
+          jobName.replaceAll("[\r\n]", ""));
       return ResponseEntity.accepted().body("Job '" + jobName + "' started");
     } catch (Exception e) {
-      log.error("JobTriggerController: failed to start job '{}'", jobName, e);
+      log.error("JobTriggerController: failed to start job '{}'",
+          jobName.replaceAll("[\r\n]", ""), e);
       return ResponseEntity.status(409).body("Job already running or failed to start: "
           + e.getMessage());
     }
