@@ -20,6 +20,10 @@ import org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaIscritt
 import org.ohmyopensource.ohmyuniversity.fetcher.domain.entity.StatisticaLaureati;
 import org.ohmyopensource.ohmyuniversity.fetcher.dto.TassoCompletamentoResponse;
 import org.ohmyopensource.ohmyuniversity.fetcher.service.StatisticheService;
+import org.ohmyopensource.ohmyuniversity.fetcher.domain.repository.StatisticaIscrittiRepository;
+import org.ohmyopensource.ohmyuniversity.fetcher.domain.repository.StatisticaLaureatiRepository;
+import org.ohmyopensource.ohmyuniversity.fetcher.domain.repository.StatisticaImmatricolatiClasseRepository;
+import org.ohmyopensource.ohmyuniversity.fetcher.domain.repository.StatisticaImmatricolatiAteneoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
@@ -46,6 +50,18 @@ class StatisticheControllerTest {
 
   @MockitoBean
   private StatisticheService statisticheService;
+
+  @MockitoBean
+  private StatisticaIscrittiRepository iscrittiRepository;
+
+  @MockitoBean
+  private StatisticaLaureatiRepository laureatiRepository;
+
+  @MockitoBean
+  private StatisticaImmatricolatiClasseRepository immatricolatiClasseRepository;
+
+  @MockitoBean
+  private StatisticaImmatricolatiAteneoRepository immatricolatiAteneoRepository;
 
   private StatisticaIscritti sampleIscritti;
   private StatisticaLaureati sampleLaureati;
