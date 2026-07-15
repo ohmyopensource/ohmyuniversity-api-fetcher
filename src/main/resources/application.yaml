@@ -31,3 +31,4 @@ fetcher:
     iscritti-dataset-id: iscritti
     immatricolati-dataset-id: immatricolati
     laureati-dataset-id: laureati
+    offerta-dataset-id: metadati

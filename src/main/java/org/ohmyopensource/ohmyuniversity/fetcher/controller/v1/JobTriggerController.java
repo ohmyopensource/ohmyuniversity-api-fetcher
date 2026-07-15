@@ -3,6 +3,7 @@ package org.ohmyopensource.ohmyuniversity.fetcher.controller.v1;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.immatricolati.ImmatricolatiJobConfig;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.iscritti.IscrittixCorsoJobConfig;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.laureati.LaureatiPerCorsoJobConfig;
+import org.ohmyopensource.ohmyuniversity.fetcher.job.mur.offerta.OffertaFormativaJobConfig;
 import org.ohmyopensource.ohmyuniversity.fetcher.job.ordini.OrdiniJobConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,9 +28,9 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * <p>Available jobs: {@code ordini} (Italian professional orders),
  * {@code iscritti} (enrolled students per course, university and degree class),
- * {@code immatricolati} (first-year students per class and per university),
- * {@code laureati} (graduates per course, university and degree class),
- * {@code timetables} (university timetable PDF links).
+ * {@code immatricolati} (first-year students per class and per university), {@code laureati}
+ * (graduates per course, university and degree class), {@code timetables} (university timetable PDF
+ * links). {@code offerta}
  */
 @RestController
 @RequestMapping("/api/jobs")
@@ -43,6 +44,7 @@ public class JobTriggerController {
   private final Job iscrittixCorsoJob;
   private final Job immatricolatiJob;
   private final Job laureatiPerCorsoJob;
+  private final Job offertaFormativaJob;
 
   private final Job importTimetablesJob;
 
@@ -54,11 +56,12 @@ public class JobTriggerController {
   /**
    * Creates the controller with required job and operator dependencies.
    *
-   * @param jobOperator        Spring Batch job operator used to start jobs
-   * @param ordiniJob          Italian professional orders job
-   * @param iscrittixCorsoJob  enrolled students per course job
-   * @param immatricolatiJob   first-year students job
+   * @param jobOperator         Spring Batch job operator used to start jobs
+   * @param ordiniJob           Italian professional orders job
+   * @param iscrittixCorsoJob   enrolled students per course job
+   * @param immatricolatiJob    first-year students job
    * @param laureatiPerCorsoJob graduates per course job
+   * @param offertaFormativaJob national degree programs job
    * @param importTimetablesJob university timetable PDF links job
    */
   public JobTriggerController(
@@ -67,12 +70,14 @@ public class JobTriggerController {
       @Qualifier(IscrittixCorsoJobConfig.JOB_NAME) Job iscrittixCorsoJob,
       @Qualifier(ImmatricolatiJobConfig.JOB_NAME) Job immatricolatiJob,
       @Qualifier(LaureatiPerCorsoJobConfig.JOB_NAME) Job laureatiPerCorsoJob,
+      @Qualifier(OffertaFormativaJobConfig.JOB_NAME) Job offertaFormativaJob,
       @Qualifier("importTimetablesJob") Job importTimetablesJob) {
     this.jobOperator = jobOperator;
     this.ordiniJob = ordiniJob;
     this.iscrittixCorsoJob = iscrittixCorsoJob;
     this.immatricolatiJob = immatricolatiJob;
     this.laureatiPerCorsoJob = laureatiPerCorsoJob;
+    this.offertaFormativaJob = offertaFormativaJob;
     this.importTimetablesJob = importTimetablesJob;
   }
 
@@ -83,10 +88,8 @@ public class JobTriggerController {
    *
    * @param jobName      job name: "ordini", "iscritti", "immatricolati", "laureati"
    * @param secretHeader value of the X-Admin-Secret header
-   * @return 202 Accepted if the job started,
-   *         401 if the secret is wrong,
-   *         404 if the job name is unknown,
-   *         409 if the job is already running or failed to start
+   * @return 202 Accepted if the job started, 401 if the secret is wrong, 404 if the job name is
+   * unknown, 409 if the job is already running or failed to start
    */
   @PostMapping("/{jobName}/run")
   public ResponseEntity<String> triggerJob(
@@ -132,6 +135,7 @@ public class JobTriggerController {
       case "iscritti" -> iscrittixCorsoJob;
       case "immatricolati" -> immatricolatiJob;
       case "laureati" -> laureatiPerCorsoJob;
+      case "offerta" -> offertaFormativaJob;
       case "timetables" -> importTimetablesJob;
       default -> null;
     };
