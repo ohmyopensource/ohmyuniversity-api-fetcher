@@ -159,6 +159,13 @@
 			<version>${mapstruct.version}</version>
 		</dependency>
 
+		<!-- Apache POI (XLSX parsing) -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+
 <!--
     ================================
     TEST
