@@ -12,19 +12,18 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 /**
  * Client for the public CKAN API exposed by dati-ustat.mur.gov.it.
- *
- * The MUR portal runs CKAN — the standard open data framework used by
- * European governments. The API requires no authentication and its contract
- * is stable by spec.
- *
- * {@link #findCsvUrl} calls {@code /api/3/action/package_show?id={datasetId}}
- * and returns the download URL of the CSV resource whose URL contains the given
- * filename pattern (e.g. "13_iscrittixcorso"), picking the one with the most
- * recent {@code last_modified} date when multiple resources match.
- *
- * Important: the pattern is matched against the resource {@code url} field
- * (which contains the actual filename), NOT the {@code name} field (which is a
- * human-readable label like "Iscritti per corso di studi - a.a. 2019/20-2024/25").
+ * <p>
+ * The MUR portal runs CKAN — the standard open data framework used by European governments. The API
+ * requires no authentication and its contract is stable by spec.
+ * <p>
+ * {@link #findCsvUrl} calls {@code /api/3/action/package_show?id={datasetId}} and returns the
+ * download URL of the CSV resource whose URL contains the given filename pattern (e.g.
+ * "13_iscrittixcorso"), picking the one with the most recent {@code last_modified} date when
+ * multiple resources match.
+ * <p>
+ * Important: the pattern is matched against the resource {@code url} field (which contains the
+ * actual filename), NOT the {@code name} field (which is a human-readable label like "Iscritti per
+ * corso di studi - a.a. 2019/20-2024/25").
  */
 @Component
 public class CkanClient {
@@ -38,25 +37,32 @@ public class CkanClient {
   }
 
   /**
-   * Searches the resource list of a CKAN dataset for a CSV whose download URL
-   * contains the given filename pattern (case-insensitive) and returns that URL.
+   * Searches the resource list of a CKAN dataset for a resource of the given format whose download
+   * URL contains the given filename pattern (case-insensitive) and returns that URL.
    *
    * <p>When multiple resources match, the one with the most recent
    * {@code last_modified} value is returned.
    *
-   * @param ckanBaseUrl   base URL of the CKAN portal, e.g. "https://dati-ustat.mur.gov.it"
-   * @param datasetId     CKAN dataset slug, e.g. "iscritti"
-   * @param filenamePattern substring to match against the resource download URL,
-   *                        e.g. "13_iscrittixcorso" or "13bis_iscrittixcorso"
-   * @return direct CSV download URL, or empty if not found or API unreachable
+   * <p>Generalized over {@link #findCsvUrl} so new MUR resources published in
+   * other formats (XLSX, TSV, ...) do not require a new client method — only a new reader to parse
+   * the downloaded bytes.
+   *
+   * @param ckanBaseUrl     base URL of the CKAN portal, e.g. "https://dati-ustat.mur.gov.it"
+   * @param datasetId       CKAN dataset slug, e.g. "metadati"
+   * @param filenamePattern substring to match against the resource download URL, e.g.
+   *                        "offerta_formativa" or "13_iscrittixcorso"
+   * @param format          CKAN resource format to match, case-insensitive, e.g. "CSV" or "XLSX"
+   * @return direct download URL, or empty if not found or API unreachable
    */
-  public Optional<String> findCsvUrl(
+  public Optional<String> findResourceUrl(
       String ckanBaseUrl,
       String datasetId,
-      String filenamePattern) {
+      String filenamePattern,
+      String format) {
 
     String apiUrl = ckanBaseUrl + "/api/3/action/package_show?id=" + datasetId;
-    log.info("CkanClient: querying {} for filename pattern '{}'", apiUrl, filenamePattern);
+    log.info("CkanClient: querying {} for filename pattern '{}' (format '{}')",
+        apiUrl, filenamePattern, format);
 
     try {
       CkanPackageResponse response = webClient.get()
@@ -76,10 +82,8 @@ public class CkanClient {
         return Optional.empty();
       }
 
-      // Match against the URL field — it contains the actual filename.
-      // The name field is a human-readable label and does not contain the filename.
       Optional<CkanResource> match = resources.stream()
-          .filter(r -> r.format != null && r.format.equalsIgnoreCase("CSV"))
+          .filter(r -> r.format != null && r.format.equalsIgnoreCase(format))
           .filter(r -> r.url != null
               && r.url.toLowerCase().contains(filenamePattern.toLowerCase()))
           .max(Comparator.comparing(
@@ -87,8 +91,8 @@ public class CkanClient {
               Comparator.naturalOrder()));
 
       if (match.isEmpty()) {
-        log.warn("CkanClient: no CSV resource with URL matching '{}' in dataset '{}'",
-            filenamePattern, datasetId);
+        log.warn("CkanClient: no {} resource with URL matching '{}' in dataset '{}'",
+            format, filenamePattern, datasetId);
         return Optional.empty();
       }
 
@@ -100,6 +104,23 @@ public class CkanClient {
           datasetId, e.getMessage());
       return Optional.empty();
     }
+  }
+
+  /**
+   * Convenience wrapper over {@link #findResourceUrl} for the CSV format, kept for backward
+   * compatibility with existing callers (iscritti, laureati, immatricolati, ordini jobs).
+   *
+   * @param ckanBaseUrl     base URL of the CKAN portal, e.g. "https://dati-ustat.mur.gov.it"
+   * @param datasetId       CKAN dataset slug, e.g. "iscritti"
+   * @param filenamePattern substring to match against the resource download URL, e.g.
+   *                        "13_iscrittixcorso" or "13bis_iscrittixcorso"
+   * @return direct CSV download URL, or empty if not found or API unreachable
+   */
+  public Optional<String> findCsvUrl(
+      String ckanBaseUrl,
+      String datasetId,
+      String filenamePattern) {
+    return findResourceUrl(ckanBaseUrl, datasetId, filenamePattern, "CSV");
   }
 
   // ================================
