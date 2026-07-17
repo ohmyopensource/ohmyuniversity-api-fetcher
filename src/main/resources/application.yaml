@@ -1,3 +1,8 @@
+# ============================================================
+# OhMyUniversity! - Fetcher
+# Base configuration - shared across all profiles.
+# ============================================================
+
 spring:
   profiles:
     default: dev
@@ -23,7 +28,7 @@ spring:
         size: 5
 
 server:
-  port: 8084
+  port: ${SERVER_PORT:8083}
 
 fetcher:
   mur:
